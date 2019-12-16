@@ -1,12 +1,12 @@
-**Practice Lab: Using PowerShell to Configure Windows**
+# Practice Lab: Using PowerShell to Configure Windows
 
- 
+ 
 
-**Summary**
+##Summary
 
 In this lab you will learn how to use PowerShell to Configure Windows.
 
- 
+ 
 
 **Note**: In Windows PowerShell, a hyphen (-) precedes each cmdlet parameter
 name, as with the -Value parameter in the preceding code. When you copy text
@@ -14,47 +14,56 @@ from a file, word wrapping might separate the hyphen from the parameter name.
 Therefore, inspect all copied cmdlets and parameters to ensure that they follow
 the Windows PowerShell syntax requirements.
 
- 
+ 
 
-**Scenario**
+###Scenario
 
 Your supervisor, Mr. Meadows, wants you to use Windows PowerShell to test the
 scripting environment. So you run several PowerShell commands on LON-CL1 to get
 familiar with the syntax and create a script to list all running services using
 the PowerShell ISE.
 
- 
+ 
 
-Task 1: Use Windows PowerShell to configure a device
+### Task 1: Use Windows PowerShell to configure a device
 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrato**r with the password
-    **Pa55w.rd.**
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd.**+++
 
 2.  Select **Start** and type **PowerShell**. Select **Run as administrator**.
     In the User Account Control window select **Yes**.
 
 3.  At the PowerShell window, type the following and then press **Enter**:
-
->   Get-ExecutionPolicy
+    
+    ```
+    Get-ExecutionPolicy
+    ```
 
 1.  Confirm the current setting of the PowerShell execution policy is set to
     **Restricted.**
 
 2.  If the execution policy is set to **Restricted**, change it to
     **Unrestricted** by running the following command at the PowerShell window:  
+
+    ```
     Set-ExecutionPolicy Unrestricted
+    ```
 
 3.  Confirm that the execution policy is now **Unrestricted**.
 
 4.  At the PowerShell window, launch Notepad by typing the following command and
     then press **Enter**:
 
->   Start-Process Notepad
+    ```
+    Start-Process Notepad
+    ```
 
 1.  At the PowerShell window, type the following command and then press
     **Enter**:
 
->   Get-Process
+    ```
+    Get-Process
+    ```
 
 1.  Review the list of all running processes. Identify that Notepad is running
     and note the Process ID.
@@ -62,14 +71,18 @@ Task 1: Use Windows PowerShell to configure a device
 2.  At the PowerShell window, type the following command and then press
     **Enter**:
 
->   Stop-Process -Id [ID]
+    ```
+    Stop-Process -Id [ID]
+    ```
 
 1.  Verify that the Notepad window is no longer open.
 
 2.  At the PowerShell window, list the application log entries by typing the
     following command and then press **Enter**:
 
->   Get-EventLog -LogName "Application"
+    ```
+    Get-EventLog -LogName "Application"
+    ```
 
 1.  Select **Start** and type **Telnet**. Select **Turn Windows features on and
     off**.
@@ -79,16 +92,20 @@ Task 1: Use Windows PowerShell to configure a device
 
 3.  At the PowerShell Window, type the following command, and then press
     **Enter**:  
+
+    ```
     Enable-WindowsOptionalFeature -Online -FeatureName "TelnetClient"  
-    *Note: This will install the Telnet Client windows feature.*
+    ```
+
+    >[!NOTE] Note: This will install the Telnet Client windows feature.
 
 4.  Select **Start** and type **Telnet**. Select **Open.**
 
 5.  Close all open windows.
 
->    
+>    
 
-Task 2: Use a Windows PowerShell Script
+### Task 2: Use a Windows PowerShell Script
 
 1.  In the **Type here to search** box, type
     [\\\\LON-DC1\\labfiles](file:///\\LON-DC1\labfiles), and then press Enter.
@@ -157,7 +174,7 @@ Task 2: Use a Windows PowerShell Script
 
 14. Close all open windows.
 
- 
+ 
 
 **Results:** After completing the exercise you have learned how to manage
 Windows 10 using PowerShell and PowerShell scripts.
