@@ -9,22 +9,32 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
 
 
 ### Task 1: Verify that the computer meets the minimum requirements
-1.  Sign in to LON-CL6 as **Adatum\\Administrator** with the password **Pa55w.rd**
-2.  If a Microsoft Windows dialog box opens, select **Restart Later**.
-3.  If a Windows Activation dialog box opens, Select **Ask me later**. Select
+1.  Sign in to @lab.VirtualMachine(LON-CL6).SelectLink as +++**Adatum\\Administrator**+++ with the password +++**Pa55w.rd**+++
+
+2.  If a Windows Activation dialog box opens, Select **Ask me later**. Select
     **OK**.
+
+3.  If a Microsoft Windows dialog box opens, select **Restart Later**.
+
 4.  On the taskbar, Select **Start**. Right-click **Computer**, and then Select
     **Properties**.
-5.  Write down the settings for:
-- Processor: \____________________\_
-- Installed memory (RAM):____________\_
+5.  Enter the settings for:
+
+   -  Processor: @lab.TextBox(CPU)
+
+   -  Installed memory (RAM): @lab.TextBox(RAM)
+
 6.  **Close** the System window.
 7.  Right-click **the desktop**, and then select **Screen resolution**.
 8.  Write down the screen resolution:________________\_
 9.  On the taskbar, select the **Windows Explorer** icon.
 10.  Click **Computer**.
-- Write down the available disk space for drive C: \_______________\_
-- Do the noted values match the minimum requirements? \_______________\_
+11.  Enter the settings for:
+
+   -  Available disk space on C: @lab.TextBox(dspace)
+   
+12. Do the values match the miniumu requirements: @lab.TextBox(confirm)
+
 
 ### Task 2: Perform an in-place upgrade from local media
 1.  Sign in to LON-CL6 as **Adatum\\Administrator** with the password **Pa55w.rd**
@@ -33,7 +43,7 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
     **OK**.
 4.  On the taskbar, select the **Windows Explorer** icon.
 5.  In Windows Explorer, select the **DVD drive**.
-6.  In the contents pane, double-click the **setup.exe** file.
+6.  In the contents pane, double-click the **setup.exe** file, and select **Yes**.
 7.  On the Windows 10 Setup page, select **Next*.
 8.  On the Applicable notices and license terms page, select **Accept**.
 9. On the Ready to install page, select **Choose what to keep**.
@@ -41,7 +51,7 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
     select **Yes**.
 11. On the Ready to install page, select **Install**. The setup program will now upgrade your Windows 7 installation to Windows 10. 
 
-_Note: This will take approximately 30 minutes._
+    >[!NOTE] Note: This will take approximately 30 minutes.
 
 ### Task 3: Complete the Installation
 1. On the Region page, select **Yes**.
