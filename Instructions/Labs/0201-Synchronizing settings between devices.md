@@ -150,7 +150,7 @@ letter* + **MD100@outlook.com**. If it is not, you did not enter the sign in nam
 9.  Select **Start**, select the **Admin** button, and then select *Your first
     name + Last name’s first letter***MD\@outlook.com**.
 
-10. In the **Password** box, type **Pa55w.rd123**, and then press Enter.
+10. In the **Password** box, type +++**Pa55w.rd123**+++, and then press Enter.
 
     >[!NOTE]Note: It will take a few minutes to build the profile.
 
