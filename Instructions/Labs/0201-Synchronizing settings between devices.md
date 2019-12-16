@@ -102,6 +102,8 @@ Other Windows settings are both enabled.
 
 8.  Close **Settings**.
 
+    >[!ALERT] You will not be able to perform steps 9, 10 and 11 below unless Winodows 10 is activated with a valid license. If this is the case, please proceed to step 12.
+
 9.  On the desktop right-click the empty space and select **Personalize.**
 
 10. Select **Background** on the left and choose a different color.
