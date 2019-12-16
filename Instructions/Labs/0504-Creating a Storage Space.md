@@ -13,24 +13,27 @@ LON-CL3 and configure a storage space. You have to remove the partition from the
 already used disk first and then create a two-way mirror storage pool inside a
 newly created storage space.
 
- 
+ 
 
 ### Task 1: Initialize the required disks
 
-1.  Sign in to **LON-CL3** as **LON-CL3\\Admin** with the password **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL3).SelectLink as +++**LON-CL3\\Admin**+++ with the password +++**Pa55w.rd**+++.
 
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 
 3.  At the PowerShell Window type the following command and confirm with "Yes":
 
->   Clear-Disk -Number 1 -RemoveData
+    ```
+    Clear-Disk -Number 1 -RemoveData
+    ```
 
 1.  At the PowerShell Window type the following command and confirm with "Yes":
 
->   Get-Disk \| Where partitionstyle -eq 'raw' \| Initialize-Disk
->   -PartitionStyle MBR
+    ```
+    Get-Disk | Where partitionstyle -eq 'raw' | Initialize-Disk -PartitionStyle MBR
+    ```
 
- 
+ 
 
 ### Task 2: Create a mirrored storage pool
 
@@ -49,7 +52,7 @@ newly created storage space.
 6.  Click **Create storage space.** This will automatically open the File
     Explorer window.
 
- 
+ 
 
 ### Task 3: Verify that the volume is available in File Explorer 
 
@@ -60,7 +63,7 @@ newly created storage space.
 
 3.  Close all open windows
 
- 
+ 
 
 **Results**: After completing this exercise, you will have created a two-way
 mirror storage space.
