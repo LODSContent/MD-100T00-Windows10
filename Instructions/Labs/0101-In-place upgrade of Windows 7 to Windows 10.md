@@ -45,7 +45,11 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
 12. Do the values match the miniumum requirements: @lab.TextBox(confirm)
 
 ### Task 2: Perform an in-place upgrade from local media
-1.  Sign in to LON-CL6 as **Adatum\\Administrator** with the password **Pa55w.rd**
+
+>[!ALERT] LON-CL6 must be activated with a valid Enterprise license; otherwise, the subsequent lab exercise will fail.
+
+1.  Sign in to LON-CL6 as +++**Adatum\\Administrator**+++ with the password +++**Pa55w.rd**+++
+
 2.  If a Microsoft Windows dialog box opens, select **Restart Later**.
 3.  If a Windows Activation dialog box opens, select **Ask me later**. Select
     **OK**.
@@ -66,8 +70,8 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
 2. On the Keyboard Layout page, select **Yes**, then **Skip**.
 3. On the Sign in with Microsoft page, select **Domain join instead**.
 4. On the Who’s going to use this PC page, provide the following information when prompted, and selecting **Next**
--   Username: **LocalAdmin**
--   Password: **Pa55w.rd**
+-   Username: +++**LocalAdmin**+++
+-   Password: +++**Pa55w.rd**+++
 5. When prompted for security questions, select any three questions and enter any answer.
 6. On the Do more across devices with activity history, select **No**.
 7. On the Get help from your digital assistant, select **Decline**
@@ -76,7 +80,7 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
 
 ### Task 4: Verify that the upgrade was successful 
 1.  Select **Start** and type **winver**. Press **Enter**.
-2.  Make sure that the version number is 1809.
+2.  Make sure that the version number is 1903.
 
 
 **Results**: After finishing this exercise, you will have successfully upgrading LON-CL6 from Windows 7 to Windows 10. 
