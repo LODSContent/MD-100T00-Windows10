@@ -14,11 +14,13 @@ deliberately trigger and test antivirus programs. Additionally, you will need to
 create a new power plan that minimizes power usage, but does not impact sales
 staff playing the presentations while on battery.
 
- 
+ 
 
 ### Task 1: Using the Settings Apps
 
-1.  Sign in to LON-CL3 as **LON-CL3\\Admin** with the password **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL3).SelectLink as +++**LON-CL3\\Admin**+++ with the password +++**Pa55w.rd**+++.
+
+    >[!Alert] Before proceeding, please confirm that a folder named C:\UTIL exists. If it does not, please create the folder.
 
 2.  On **LON-CL3** select **Start,** and then select the **Settings** icon.
 
@@ -37,38 +39,39 @@ staff playing the presentations while on battery.
 8.  In Exclusions select **Add an exclusion** and then select **Folder**.
 
 9.  Browse to **C:\\UTIL** and select **Select Folder**. In the User Account
-    Control window select **Yes**.  
-    _**Note**: C:\\Util is now listed as exclusion._
+    Control window select **Yes**. 
+
+    >[!NOTE] C:\\Util is now listed as exclusion.
 
 10. Close the Windows Security app.
 
 11. Close the Settings app.
 
- 
+ 
 
 ### Task 2: Using Control Panel
 
-1.  Select **Start** and type **Control Panel**. Press **Enter**.
+1.  Select **Start** and type +++**Control Panel**+++. Press **Enter**.
 
 2.  In the Control Panel window select **Hardware and Sound** and then select
-    **Power Options**.
+**Power Options**.
 
 3.  Select **Create a power plan.**
 
-4.  Enter "**Power Save - Presentation**" in the Plan Name field and select
-    **Next**.
+4.  Enter +++**Power Save - Presentation**+++ in the Plan Name field and select
+**Next**.
 
 5.  Select **Create**.
 
 6.  Under Preferred Plans, select **Change plan settings** next to the plan you
-    created.
+created.
 
 7.  Select **Change advanced power settings**.
 
 8.  Scroll down and expand the **Multimedia settings** option.
 
 9.  Expand the **When playing video** option and confirm the setting **Optimize
-    Video Quality**.
+Video Quality**.
 
 10. Select **Ok**.
 
@@ -76,7 +79,7 @@ staff playing the presentations while on battery.
 
 12. Close all open windows.
 
- 
+ 
 
 **Results:** After finishing the exercise you have excluded one folder from
 Virus scanning and you have created a new power plan.
