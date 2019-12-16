@@ -12,11 +12,11 @@ storage on the E: drive of LON-CL1. This is preventing other users from saving
 their files. You decide to create disk quotas of 500 MB with a warning set at
 250 MB, and ask Ada Russell to test if the configuration is correct.
 
- 
+ 
 ### Task 1: Create disk quotas
 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
 
 2.  Select the **File Explorer** icon on the taskbar.
 
@@ -29,8 +29,8 @@ their files. You decide to create disk quotas of 500 MB with a warning set at
     management** check box and select the **Deny disk space to users exceeding
     quota limit** check box.
 
-6.  Select **Limit disk space to**, in the Limit disk space to text box, **type
-    500,** and then in the Set warning level to text box, **type 250**.
+6.  Select **Limit disk space to**, in the Limit disk space to text box, type
+    +++500+++, and then in the Set warning level to text box, type +++250+++.
 
 7.  Select **MB** as the unit for both values.
 
@@ -42,33 +42,43 @@ their files. You decide to create disk quotas of 500 MB with a warning set at
 
 10. Note that LON-CL1 will restart now
 
-###  
+###  
 
 ### Task 2: Create test files
 
-1.  Sign in as the user **Adatum\\ada** with the password **Pa55w.rd.**
+1.  Sign in as the user +++**Adatum\\ada**+++ with the password +++**Pa55w.rd.**+++
 
-2.  Select **Start**, and then type **cmd**. Press **Enter**.
+2.  Select **Start**, and then type +++**cmd**+++. Press **Enter**.
 
 3.  At the command prompt type the following five commands:
 
->   E:
+    ```
+    E:
+    ```
 
->   MKDIR research
+    ```
+    MKDIR research
+    ```
 
->   CD research
+    ```
+    CD research
+    ```
 
->   Fsutil file createnew file1.txt 209715200
+    ```
+    Fsutil file createnew file1.txt 209715200
+    ```
 
->   Fsutil file createnew file2.txt 209715200
+    ```
+    Fsutil file createnew file2.txt 209715200
+    ```
 
 1.  Sign out.
 
-###  
+###  
 
 ### Task 3: Verify the disk quota functionality 
 
-1.  Sign in as **Adatum\\Administrator** with the password **Pa55w.rd**
+1.  Sign in as +++**Adatum\\Administrator**+++ with the password +++**Pa55w.rd**+++
 
 2.  Select the **File Explorer** icon on the taskbar.
 
