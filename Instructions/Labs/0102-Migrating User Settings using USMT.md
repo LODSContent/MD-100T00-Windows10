@@ -4,10 +4,13 @@
 In this lab you will learn how to migrate user settings from one computer to another using the User State Migration Tool (USMT).
 
 ### Scenario
-You have to replace the computer of one of your colleagues. He requires you to copy his user settings from the old computer, LON-CL2, to the new computer, LON-CL1. The best way to do so is using the User State Migration Tool (USMT). The USMT install files are located at \\\\LON-DC1\\Labfiles\\USMT. A location to store migration data has been provided at \\\\LON-DC1\\Labfiles\\Install\\MigrationStore.
+You have to replace the computer of one of your colleagues. He requires you to copy his user settings from the old computer, LON-CL2, to the new computer, LON-CL1. The best way to do so is using the User State Migration Tool (USMT). The USMT install files are located at \\\\LON-DC1\\Labfiles\\Install\\USMT. A location to store migration data has been provided at \\\\LON-DC1\\Labfiles\\Install\\MigrationStore.
 
 ### Task 1: Prepare the source computer 
 1.  Sign in to @lab.VirtualMachine(LON-CL2).SelectLink as +++**ADATUM\\administrator**+++, Password: +++**Pa55w.rd**+++
+
+>[!ALERT] Before proceeding, open File Explorer and navigate to +++\\\\LON-DC1\e$\LabFiles\Install+++ and verify that the MigrationStore folder is present. If folder is not present, please create it.
+
 2.  Right-click the **desktop**, hover over the **New** menu item, and then select **Text Document**. Type +++**Demofile**+++ and press **Enter**.
 3.  Double-click **Demofile.txt** and type some random text. Select **File**, and then select the **Save**. Close Notepad.
 4.  Select **Start** and type **cmd**. Select **Run as administrator**. In the **User Account Control** window select **Yes**
