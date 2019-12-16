@@ -10,12 +10,17 @@ In this lab you will learn how to manage the settings of Windows Update.
 Your IT security officer discovers that not all devices are doing properly Windows 10 updates. So you will configure the settings for Windows Update on LON-CL1 to receive updates from the Semi-Annual Channel (Targeted) release channel.
 
 ### Task 1: Configure update settings for a single device 
-1.  Sign in to **LON-CL1** as ADATUM\\Administrator with the Password **Pa55w.rd**
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++ADATUM\\Administrator+++ with the Password +++**Pa55w.rd**+++.
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**. In the    **User Account Control** window select **Yes**.
 3.  In the Administrator: Windows PowerShell window, type the following command,
     and then press Enter:
-`  Set-Service wuauserv -Startuptype Manual`
-_**Note**: For the lab setup, the Windows Update service is disabled. The above command is not necessary to run in typical Windows 10 scenarios._
+
+    ```
+    Set-Service wuauserv -Startuptype Manual
+    ```
+
+    >[!NOTE]**Note**: For the lab setup, the Windows Update service is disabled. The above command is not necessary to run in typical Windows 10 scenarios.
+    
 4.  Select **Start**, and then Select the **Settings** icon.
 5.  In **Settings**, select **Update & Security**.
 6.  On the **Windows Update** tab, select **Advanced options**.
