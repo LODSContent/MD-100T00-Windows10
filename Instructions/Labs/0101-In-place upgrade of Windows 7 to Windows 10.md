@@ -26,15 +26,16 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
 
 6.  **Close** the System window.
 7.  Right-click **the desktop**, and then select **Screen resolution**.
-8.  Write down the screen resolution:________________\_
+8.  Enter the screen resolution:
+    - Screen resolution: @lab.TextBox(resolution)
+
 9.  On the taskbar, select the **Windows Explorer** icon.
 10.  Click **Computer**.
 11.  Enter the settings for:
 
    -  Available disk space on C: @lab.TextBox(dspace)
    
-12. Do the values match the miniumu requirements: @lab.TextBox(confirm)
-
+12. Do the values match the miniumum requirements: @lab.TextBox(confirm)
 
 ### Task 2: Perform an in-place upgrade from local media
 1.  Sign in to LON-CL6 as **Adatum\\Administrator** with the password **Pa55w.rd**
