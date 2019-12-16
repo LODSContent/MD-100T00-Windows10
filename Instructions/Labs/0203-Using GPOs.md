@@ -16,8 +16,8 @@ disabled. You decide to use a domain wide GPO that is scoped to LON-CL2.
 
 ### Task 1: Create GPO to configure devices
 
-1.  Sign in to **LON-DC1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**
+1.  Sign in to @lab.VirtualMachine(LON-DC1).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++
 
 2.  On **LON-DC1**, in Server Manager, in the **Tools** list, select **Group
     Policy Management**.
