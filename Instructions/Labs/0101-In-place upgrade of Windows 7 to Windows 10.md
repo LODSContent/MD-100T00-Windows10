@@ -27,7 +27,8 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
 6.  **Close** the System window.
 7.  Right-click **the desktop**, and then select **Screen resolution**.
 8.  Enter the screen resolution:
-    - Screen resolution: @lab.TextBox(resolution)
+
+   -  Screen resolution: @lab.TextBox(resolution)
 
 9.  On the taskbar, select the **Windows Explorer** icon.
 10.  Click **Computer**.
