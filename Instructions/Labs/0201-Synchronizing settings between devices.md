@@ -18,8 +18,8 @@ two devices. You've decided to use a new Microsoft Account to do this.
 
 ### Task 1: Connect your Microsoft account
 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
 
 2.  Select **Start**, and then select the **Settings** icon.
 
@@ -36,14 +36,14 @@ two devices. You've decided to use a new Microsoft Account to do this.
 7.  Create a Microsoft account with the following values, and then select
     **Next**:
 
-    -   New email: Your first name *+ L*ast name’s first letter (for example,
+    -   New email: *Your first name* + *Last name’s first letter* (for example,
         KariT) + **MD100**
 
     -   *First name: Your first name*
 
     -   *Last name: Your last name*
 
-    -   *Password: Pa55w.rd123*
+    -   *Password: +++Pa55w.rd123+++*
 
     -   *Country/region: your country or region*
 
@@ -53,29 +53,38 @@ two devices. You've decided to use a new Microsoft Account to do this.
 
     -   *Year: 1990*
 
->   *Note: If you select a country or region other than the United States, the
->   birth date boxes do not appear. This is expected behavior, and you do not
->   need to enter a birth date in this scenario.*
+1. Enter your Microsoft account sign in name, including the domain suffix (for example, KariTMD100@outlook.com), in the text box below:
+ 
+    MS account:
 
->    
+    @lab.TextBox(MSaccount)
+
+    >[!NOTE] Please ensure you enter your sign in name correctly.
+
+    >[!NOTE] Note: If you select a country or region other than the United States, the
+birth date boxes do not appear. This is expected behavior, and you do not
+need to enter a birth date in this scenario.
+    
 
 1.  If the **Add Security Info** page appears, type your mobile phone number,
-    and then select **Send code**. When you receive the code, type it in the
-    **Enter the access code** box and select **Next**.
+and then select **Send code**. When you receive the code, type it in the
+**Enter the access code** box and select **Next**.
 
->   *Note: On the Add Security Info page, you must use your real mobile phone
->   number to receive the verification code.*
+    >[!ALERT] Important: On the Add Security Info page, you must use your real mobile phone
+number to receive the verification code.
 
->   *Note: It will take a few minutes to create your profile.*
+    >[!NOTE] Note: It will take a few minutes to create your profile.
 
 1.  **Sign out.**
 
->    
+   
 
 ### Task 2: Sign in and personalize the device
 
-1.  Sign in to **LON-CL1** as *Your first name + Last name’s first
-    letter***MD100\@outlook.com** with the password **Pa55w.rd123**.
+1.  Sign in to **LON-CL1** as +++@lab.Variable(MSaccount)+++ with the password +++**Pa55w.rd123**+++.
+
+    >[!NOTE] The account name above should be the concatenation of  *Your first name* + *Last name’s first
+letter* + **MD100@outlook.com**. If it is not, you did not enter the sign in name correctly in the text box above.
 
 2.  On the **Create a PIN** page select **Next .**
 
@@ -89,7 +98,7 @@ two devices. You've decided to use a new Microsoft Account to do this.
 6.  Select **Start**, then **Settings**, then select **Accounts**.
 
 7.  Select **Sync your settings** on the left. Verify that Sync settings and
-    Other Windows settings are both enabled.
+Other Windows settings are both enabled.
 
 8.  Close **Settings**.
 
@@ -102,17 +111,17 @@ two devices. You've decided to use a new Microsoft Account to do this.
 12. Right-click on the taskbar and uncheck **Lock the taskbar.**
 
 13. Select the task bar, with the button held down, drag the task bar to another
-    part of the screen to re-position where the taskbar is.
+part of the screen to re-position where the taskbar is.
 
 14. Open **Microsoft Edge**.
 
-15. Navigate to <http://www.microsoft.com/learn>.
+15. Navigate to +++http://www.microsoft.com/learn+++.
 
 16. Click the **star icon** in the address bar to save as a favorite.
 
 17. **Sign out**.
 
- 
+ 
 
 ### Task 3: Sign in on another device
 
@@ -128,8 +137,11 @@ two devices. You've decided to use a new Microsoft Account to do this.
     else to this PC**.
 
 6.  On the **How will this person sign in?** page, in the **Email or phone**
-    box, type *Your first name + Last name’s first
-    letter***MD100\@outlook.com,** and then select **Next**.
+box, type +++@lab.Variable(MSaccount)+++, and then select **Next**.
+
+    >[!NOTE] The account name above should be the concatenation of  *Your first name* + *Last name’s first
+letter* + **MD100@outlook.com**. If it is not, you did not enter the sign in name correctly in the text box above.
+
 
 7.  On the **Good to go** page, select **Finish**.
 
@@ -140,7 +152,7 @@ two devices. You've decided to use a new Microsoft Account to do this.
 
 10. In the **Password** box, type **Pa55w.rd123**, and then press Enter.
 
->   *Note: It will take a few minutes to build the profile.*
+    >[!NOTE]Note: It will take a few minutes to build the profile.
 
 1.  On the **Create a PIN** page select **Next**
 
@@ -155,7 +167,7 @@ two devices. You've decided to use a new Microsoft Account to do this.
 
 6.  Open **Microsoft Edge** and select the **Favorites** icon. Verify the
     Microsoft Learn website is in the list.  
-     
+     
 
 **Results:** After finishing this exercise, you will have setup OneDrive using a
 Microsoft account and successfully synchronized settings between different
