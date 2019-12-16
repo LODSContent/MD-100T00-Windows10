@@ -11,6 +11,12 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
 ### Task 1: Verify that the computer meets the minimum requirements
 1.  Sign in to @lab.VirtualMachine(LON-CL6).SelectLink as +++**Adatum\\Administrator**+++ with the password +++**Pa55w.rd**+++
 
+
+    >[!TIP] To send Ctrl+Alt+Delete to the virtual machine, select  the lightning bolt icon in the upper left of the lab UI and select **Ctrl+Alt+Delete**. Alternatively, select the Resources tab, and select **Ctrl+Alt+Delete** under the virtual machine you want to sign in to.
+
+    >[!TIP] Whenever you see the +++Type text icon+++, you can select it to copy the text string to the virtual machine. 
+
+
 2.  If a Windows Activation dialog box opens, Select **Ask me later**. Select
     **OK**.
 
