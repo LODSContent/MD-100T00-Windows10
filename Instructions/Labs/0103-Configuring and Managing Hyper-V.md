@@ -13,31 +13,32 @@ server LON-HOST1 and modify its settings to fit to the requirements of the
 application. Before you install the application you test if you can revert the
 VM to an checkpoint as a backup solution in case the install fails.
 
- 
+ 
 
 ### Task 1: Creating a virtual machine in Hyper-V
 
-1.  Sign in to **LON-HOST1** as **ADATUM\\Administrator** with the password
-    **Pa55w.rd.**
+1.  Sign in to @lab.VirtualMachine(LON-HOST1).SelectLink as +++**ADATUM\\Administrator**+++ with the password
+    +++**Pa55w.rd.**+++
 
 2.  In the taskbar select the **Hyper V Manager** icon.
 
 3.  In the Hyper V Manager window select **New**, and then select **Virtual
-    Machine**.
+Machine**.
 
 4.  In the New Virtual Machine Wizard window select **Next**, then enter
-    **LON-TEST** in the Name field and select **Next**.
++++**LON-TEST**+++ in the Name field and select **Next**.
 
 5.  Select **Generation 1** and select **Next**. Leave the default startup
-    memory and select **Next**.  
-    In the Connection list select **External network**, and select Next.
+memory and select **Next**.  
 
-6.  In the Size box enter **75**, and select **Next.**
+6. In the Connection list select **External network**, and select Next.
 
-7.  On the Installation Options page, leave the default to install the operating
-    system later, and select **Next** then select **Finish**.
+7.  In the Size box enter **75**, and select **Next.**
 
- 
+8.  On the Installation Options page, leave the default to install the operating
+system later, and select **Next** then select **Finish**.
+
+ 
 
 ### Task 2: Add an ISO file to a VM
 
@@ -53,36 +54,40 @@ VM to an checkpoint as a backup solution in case the install fails.
 
 6.  In the Media area, select the Image file option, and select **Browse**.
 
-7.  Browse to **C:\\Labfiles**, select **Windows.is**o and select **Open**.
+7.  Browse to **C:\\Labfiles**, select **Windows.iso** and select **Open**.
 
 8.  Select **OK** to close the Settings window.
 
 9.  Right-click on LON-TEST and select **Start**.
 
->    
+    
 
 ### Task 3: Managing virtual machine settings with PowerShell
 
 1.  Right-click **Start** and select **Windows Powershell (Admin)**.
 
 2.  At the PowerShell window, type the following command and then press
-    **Enter**:
+**Enter**:
 
->   Get-VM LON-Test \| Set-VMMemory -StartUpBytes 2GB
+    ```
+    Get-VM LON-Test | Set-VMMemory -StartUpBytes 2GB
+    ```
 
 1.  Confirm that for LON-Test the StartUpBytes is now set to 2GB.
 
 2.  At the PowerShell window, type the following command and then press
-    **Enter**:
+**Enter**:
 
->   Get-VM LON-Test \| Add-VMNetworkAdapter -SwitchName "External Network"
+    ```
+    Get-VM LON-Test | Add-VMNetworkAdapter -SwitchName "External Network"
+    ```
 
 1.  Confirm that LON-Test has now an additional network adapter that is
-    connected to the virtual switch "External Network".
+connected to the virtual switch "External Network".
 
 2.  Close the PowerShell window.
 
- 
+ 
 
 ### Task 4: Creating a snapshot
 
@@ -93,24 +98,28 @@ VM to an checkpoint as a backup solution in case the install fails.
 3.  In the navigation area select **Network Adapter.**
 
 4.  In the Network Adapter settings, in the Virtual switch drop-down select
-    "**not connected**", and then select **OK.**  
-    **Note:** *This is done to prevent Windows from updating, which would
-    lengthen the time of the lab.*
+"**not connected**", and then select **OK.**  
+
+    >[!NOTE}**Note:** This is done to prevent Windows from updating, which would
+lengthen the time of the lab.
 
 5.  In the Virtual machine area select **LON-CL5** and then select
-    **Checkpoint.**  
-    **Note:** *Creation of the checkpoint may take a couple of minutes.*
+**Checkpoint.**  
+
+
+    >[!NOTE] **Note:** Creation of the checkpoint may take a couple of minutes.
 
 6.  Once the snapshot is created select **OK.**  
-    **Note:** *In the checkpoint area you can now see the snapshot.*
+
+    >[!NOTE] **Note:** In the checkpoint area you can now see the snapshot.
 
 7.  Select **Connect.**
 
 8.  On **LON-CL5** inside the Virtual Machine Connection Window in the taskbar
-    select the **File Explorer** icon.
+select the **File Explorer** icon.
 
 9.  Navigate to the **C:\\Users\\Student** folder. Right-click the **Documents**
-    folder, and then select **Delete**.
+folder, and then select **Delete**.
 
 10. Close the Virtual Machine Connection window.
 
@@ -123,11 +132,11 @@ VM to an checkpoint as a backup solution in case the install fails.
 14. Select **Connect.**
 
 15. On **LON-CL5** inside the Virtual Machine Connection Window verify that the
-    **Documents** folder is available again.
+**Documents** folder is available again.
 
 16. Close all open windows.
 
- 
+ 
 
 **Results:** After finishing the exercise you have created a Hyper V virtual
 machine and managed its settings.
