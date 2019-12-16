@@ -108,7 +108,7 @@ the PowerShell ISE.
 ### Task 2: Use a Windows PowerShell Script
 
 1.  In the **Type here to search** box, type
-    [\\\\LON-DC1\\labfiles](file:///\\LON-DC1\labfiles), and then press Enter.
+    +++\\\\LON-DC1\\labfiles+++, and then press Enter.
 
 2.  In the content pane, double-click the **Configure** folder.
 
@@ -117,7 +117,7 @@ the PowerShell ISE.
 4.  Select **Start** and type **Powershell ISE**. Press **Enter**.
 
 5.  In the Windows PowerShell ISE, open the script file
-    **E:\\Labfiles\\Configure\\Services.ps1**.
+    **E:\\Labfiles\\Services.ps1**.
 
 6.  Read the script, and then note what the script is doing, according to the
     following note.
@@ -134,15 +134,15 @@ the PowerShell ISE.
 2.  Select **Run script (F5)**, and then read the output.  
     *Note: The output does not have multiple colors.*
 
-3.  At the end of line 14, type **–ForegroundColor \$color**.
+3.  At the end of line 14, type +++**–ForegroundColor $color**+++.
 
 4.  On the toolbar, select **Run script (F5)** in the Windows PowerShell ISE
     window. Select **OK** to save the file, and then read the output.  
     *Note: Running services are green, and services that are not running are
     red.*
 
-5.  On line 16, type **Write-Host "A total of" \$services.count "services were
-    evaluated"**.
+5.  On line 16, type +++**Write-Host "A total of" $services.count "services were
+    evaluated"**+++.
 
 6.  Select **Run script (F5)**, and in the Windows PowerShell ISE window select
     **OK**.
@@ -167,10 +167,16 @@ the PowerShell ISE.
 
 12. At the PowerShell window, type the following command and then press
     **Enter**:  
-    Set-Location E:\\Labfiles\\Configure
+
+    ```
+    Set-Location E:\\Labfiles
+    ```
 
 13. At the PowerShell window, type the following and then press **Enter**:  
+    
+    ```
     .\\Services.ps1
+    ```
 
 14. Close all open windows.
 
