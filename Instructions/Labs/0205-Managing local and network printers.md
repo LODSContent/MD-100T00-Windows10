@@ -20,11 +20,11 @@ can be seen in the queue on LON-CL1.
 
 ### Task 1: Add and share a local printer
 
-1.  Sign in to LON-CL1 as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
 
-2.  In the taskbar, in the **Type here to search** text box, type **Control
-    Panel**, and then select **Control Panel**.
+2.  In the taskbar, in the **Type here to search** text box, type +++**Control
+    Panel**+++, and then select **Control Panel**.
 
 3.  In Control Panel, select **View devices and printers**.
 
@@ -45,12 +45,12 @@ can be seen in the queue on LON-CL1.
     Class Driver**, and then select **Next**.
 
 9.  On the **Type a printer name** page, in the **Printer name** field, type
-    **Managers Printer**, and then select **Next**.
+    +++**Managers Printer**+++, and then select **Next**.
 
 10. On the **Printer Sharing** page, select **Next**, and then select
     **Finish**.
 
- 
+ 
 
 ### Task 2: Configure printer security
 
@@ -65,11 +65,11 @@ can be seen in the queue on LON-CL1.
     Managers** section, verify that **Print** check box is selected in the
     **Allow** column, and then select **OK**.
 
- 
+ 
 
 ### Task 3: Use Print Management to manage a remote printer
 
-1.  On LON-CL1, in the **Type here to search** text box, type **print**, and
+1.  On LON-CL1, in the **Type here to search** text box, type +++**print**+++, and
     then select **Print Management**.
 
 2.  In Print Management, in the navigation pane, expand **Print Servers**, and
@@ -99,18 +99,18 @@ can be seen in the queue on LON-CL1.
     box, type **PostScript Printer**, then in the **Share Name** box, type
     **PostScript\* Printer**, select **Next** twice, and then select **Finish**.
 
- 
+ 
 
 ### Task 4: Connect to a remote printer
 
-1.  Switch to LON-CL2.
+1.  Switch to @lab.VirtualMachine(LON-CL2).SelectLink.
 
-2.  Sign in to LON-CL2 as **Adatum\\Beth** with the password **Pa55w.rd**.
+2.  Sign in to LON-CL2 as +++**Adatum\\Beth**+++ with the password +++**Pa55w.rd**+++.
 
->   **Note**: Beth is member of the IT group, but she is not a member of the
->   Managers group.
+    >[!NOTE]**Note**: Beth is member of the IT group, but she is not a member of the
+Managers group.
 
-1.  In the taskbar, in the **Type here to search** text box, type **control**,
+1.  In the taskbar, in the **Type here to search** text box, type +++**control**+++,
     and then select **Control Panel**.
 
 2.  In Control Panel, select **View devices and printers**.
@@ -124,19 +124,18 @@ can be seen in the queue on LON-CL1.
     listed**.
 
 6.  On the **Find a printer by other options** page, select **Select a shared
-    printer by name**, type [\\\\LON-CL1\\Managers
-    Printer](file:///\\LON-CL1\Managers%20Printer) in the box, and then select
+    printer by name**, type +++\\\\LON-CL1\\Managers Printer+++ in the box, and then select
     **Next**.
 
 7.  In the **Connect to lon-cl1** dialog box, select **Cancel**. In the box,
-    type [\\\\LON-DC1\\Microsoft PS Class
-    Driver](file:///\\LON-DC1\Microsoft%20PS%20Class%20Driver), select **Next**
+    type +++\\\\LON-DC1\\Microsoft PS Class
+    Driver+++, select **Next**
     twice, and then select **Finish**.
 
->   **Note:** Because Beth is not a member of the Managers group, and she does
->   not have permissions to [\\\\LON-CL1\\Managers
->   Printer](file:///\\LON-CL1\Managers%20Printer), you were asked to type
->   credentials that have the appropriate permissions.
+    >[!NOTE]**Note:** Because Beth is not a member of the Managers group, and she does
+not have permissions to [\\\\LON-CL1\\Managers
+Printer](file:///\\LON-CL1\Managers%20Printer), you were asked to type
+credentials that have the appropriate permissions.
 
 1.  In Devices and Printers, verify that **Microsoft PS Class Driver on
     LON-DC1** was added.
@@ -147,12 +146,12 @@ can be seen in the queue on LON-CL1.
 3.  Verify that the printer has a green check mark next to it, which indicates
     that it is the default printer.
 
- 
+ 
 
 ### Task 5: Print a document, and manage a print job
 
 1.  On LON-CL2, on the taskbar, in the **Type here to search** text box, type
-    **notepad**, and then press Enter.
+    +++**notepad**+++, and then press Enter.
 
 2.  In Notepad, type your name, select the **File** menu, and then select
     **Print**.
@@ -166,7 +165,7 @@ can be seen in the queue on LON-CL1.
     With Jobs**. In the details pane, view that **Microsoft PS Class Driver** is
     listed and that it has one job in the queue.
 
-6.  Switch to LON-CL2
+6.  Switch to @lab.VirtualMachine(LON-CL2).SelectLink
 
 7.  On LON-CL2, in the notification area, select **Show hidden icons**,
     right-click the printer icon, and then select **Microsoft PS Class Driver on
@@ -183,16 +182,16 @@ can be seen in the queue on LON-CL1.
 
 1.  Sign out from LON-CL2.
 
-2.  Switch to LON-CL1.
+2.  Switch to @lab.VirtualMachine(LON-CL1).SelectLink
 
 3.  On LON-CL1, in Print Management, verify that there are no longer any
     printers listed under the **Printers With Jobs** node.
 
 4.  Close all open windows
 
->    
+>    
 
->    
+>    
 
 **Results**: After completing this exercises you will have performed basic
 printer configuration like adding and sharing a local printer, configuring
