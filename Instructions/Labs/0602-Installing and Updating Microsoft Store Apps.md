@@ -42,11 +42,11 @@ command is not necessary to run in typical Windows 10 scenarios.
 
 ### Task 2: Configure app updates
 
-1.  Sign in to LON-CL1 as +++@lab.Variable(MSaccount)+++
+1.  Sign in to LON-CL1 as +++@lab.Variable(MSaccount)+++ with the password +++**Pa55w.rd123**+++ or using your **PIN**.
 
     @lab.CtrlAltDelete
 
-    >[!NOTE] The account name above should be the concatenation of Your first name + Last name’s first letter + MD100@outlook.com. If it is not, you did not enter the sign in name correctly in a text box provided for this purpose in an earlier. If this is the case, enter the username according to the pattern described in this note. 
+    >[!NOTE] The account name above should be the concatenation of Your first name + Last name’s first letter + MD100@outlook.com. If it is not, you did not enter the sign in name correctly in a text box provided for this purpose in an earlier lab. If this is the case, enter the username according to the pattern described in this note. 
 
 2.  In the taskbar, select the **Microsoft Store** icon.
 
