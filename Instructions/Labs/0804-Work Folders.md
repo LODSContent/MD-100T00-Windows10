@@ -149,8 +149,8 @@ few minutes for LON-DC1 to show.
 7.  On the Manage Work Folders page, check the option **Sync files over metered
     connections**.
 
->   **Note**: This is only needed due to the hosted lab environment
->   configuration.
+ >[!NOTE] **Note**: This is only needed due to the hosted lab environment
+configuration.
 
 1.  Close the Manage Work Folders window.
 
