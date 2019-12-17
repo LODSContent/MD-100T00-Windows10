@@ -9,12 +9,14 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 
 
 ### Task 1: Configure conditions to control access 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++
+
+    @lab.CtrlAltDelete
 2.  Select the **File Explorer** icon on the taskbar.
 3.  In File Explorer, in the navigation pane, expand **AllFiles (E:)**, and
     then select **Data**. In the details pane, right-click the **empty space**,
-    select **New**, select **Folder**, and **type Research** as the new folder
+    select **New**, select **Folder**, and type +++**Research**+++ as the new folder
     name.
 4.  Right-click **Research**, select **Properties**, select the **Sharing tab**,
     and then select **Advanced Sharing**.
@@ -36,13 +38,18 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
     permission inheritance is set to None.
 11. In the Advanced Security Settings for Research dialog box, select **Users
     (LON-CL1\\Users)**, and then select **Remove**. 
-    _**Note**: The entry for Users is now removed from the Permission entries because    it was explicitly set at this level._
+
+    >[!NOTE] **Note**: The entry for Users is now removed from the Permission entries because it was explicitly set at this level.
+
 12. Verify that **Authenticated Users** is selected, and then select **Edit**.
+
 13. In the Permission Entry for Research dialog box, select **Add a condition**,
     and compose the following expression: **User department Equals Value
     research**. You will need to type research manually in the last box. Select
     **OK** twice, then select **Close**. 
-	_**Note**: A claim type for the department attribute was preconfigured for the purpose of this lab._
+
+	>[!NOTE] **Note**: A claim type for the department attribute was preconfigured for the purpose of this lab.
+
 14. In File Explorer, in the navigation pane, select **Data**, right-click
     **IT**, select **Properties**, select the **Security tab**, and then select
     **Advanced**.
@@ -51,84 +58,133 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 16. In the Permission Entry for IT dialog box, select **Add a condition**, and
     compose the following expression: **User c Equals Value US**. You will
     need to type US manually in the last field. select **OK** three times.
-    _**Note**: A claim type for the c (country) attribute was preconfigured for the purpose of     this lab._
+
+    >[!NOTE] **Note**: A claim type for the c (country) attribute was preconfigured for the purpose of this lab.
+
 	17. Select **OK** twice, then select **Close** to close the IT Properties window.
 
 ### Task 2: Test conditions to control access 
-1.  **Switch to LON-CL2**
-2.  Sign in to **LON-CL1** as **Adatum\\beth** with the password **Pa55w.rd**
+1.  Switch to @lab.VirtualMachine(LON-CL2).SelectLink LON-CL2**
+2.  Sign in to **LON-CL2** as +++**Adatum\\beth**+++ with the password +++**Pa55w.rd**+++
+
+    @lab.CtrlAltDelete
+
 3.  Select the **File Explorer** icon on the taskbar.
 4.  In File Explorer, type **\\\\LON-CL1** in the Address bar, and then press **Enter**.
 5.  In the details pane, double-click **Research**. Read the text in the Network Error dialog box,
     and then select **Close**.
 6.  Select **Start**, type **cmd** and then select **Command Prompt**.
 7.  At the command prompt, type the following command, and then press **Enter**
-    `whoami /claims`8.  Review the output, and then **close** the command prompt.
-    _**Note**: This will show the current claims for the user. Beth has a department claim value     of IT and so she cannot connect to the Research share._
+    
+    ```
+    whoami /claims
+    ```
+
+8.  Review the output, and then **close** the command prompt.
+
+    >[!NOTE] **Note**: This will show the current claims for the user. Beth has a department claim value of IT and so she cannot connect to the Research share.
+
 9.  In the details pane, double-click **IT**.
+
 10. In the details pane, right-click the **empty space**, select **New**, select
-    **Text Document**, and then **type File50** as the name of the file.
-    _**Note**: Beth has permissions to create a new file in the IT share because she
-	is a member of the IT group and her Country claim has a value of US._
+    **Text Document**, and then type +++**File50**+++ as the name of the file.
+
+    >[!NOTE]**Note**: Beth has permissions to create a new file in the IT share because she
+	is a member of the IT group and her Country claim has a value of US.
+
 11. **Sign out**.
-12.  Sign in to **LON-CL2** as **Adatum\\Nestor** with the password **Pa55w.rd**
-    _**Note**: Nestor is a member of the IT group.**
+
+12.  Sign in to **LON-CL2** as +++**Adatum\\Nestor**+++ with the password +++**Pa55w.rd**+++
+
+    @lab.CtrlAltDelete
+
+    >[!NOTE]**Note**: Nestor is a member of the IT group.
+
 13. Select the **File Explorer** icon on the taskbar.
 14. In File Explorer, type **\\\\LON-CL1** in the Address bar, and then press **Enter**.
 15. In the details pane, double-click **IT**. 
-    _**Note**: Nestor is a member of the IT group, but he cannot connect to the IT share. 
+
+    >[!NOTE] **Note**: Nestor is a member of the IT group, but he cannot connect to the IT share. 
+
 16. Select **Close**.
-17. Select **Start**, type **cmd** and then select **Command Prompt**
-18. At the command prompt, type the following command, and then press **Enter**
-    `whoami /claims`19. Review the output, and then **close** the command prompt.
-    _**Note**: Nestor has a Country claim with the value of GB, so he cannot connect
-	to the IT share, even though he is a member of the IT group._
+
+17. Select **Start**, type +++**cmd**+++ and then select **Command Prompt**
+
+18. At the command prompt, type the following command, and then press **Enter**.
+
+    ```
+    whoami /claims
+    ```
+
+19. Review the output, and then **close** the command prompt.
+    
+    >[!NOTE] **Note**: Nestor has a Country claim with the value of GB, so he cannot connect
+	to the IT share, even though he is a member of the IT group.
+
 20. **Sign out**.
-21. Sign in to **LON-CL2** as **Adatum\\Max** with the password **Pa55w.rd**
-22. Select **Start**, type **cmd** and then select **Command Prompt**.
+21. Sign in to **LON-CL2** as +++**Adatum\\Max**+++ with the password +++**Pa55w.rd**+++
+
+    @lab.CtrlAltDelete
+
+22. Select **Start**, type +++**cmd**+++ and then select **Command Prompt**.
 23. At the command prompt, type the following command, and then press **Enter**
-    `whoami /claims`
+
+    ```
+    whoami /claims
+    ```
 24. Review the output, and then **close** the command prompt.
-   _**Note**: Max is in the Research department, and his department claim has the
-    value of Research._
+
+    >[!NOTE] **Note**: Max is in the Research department, and his department claim has the
+    value of Research.
+
 25. Select the **File Explorer** icon on the taskbar.
+
 26. In File Explorer, type **\\\\LON-CL1** in the Address bar, and then press **Enter**.
 27. In the details pane, double-click **Research**, and then verify that Max can
     view the contents of the Research folder.
 28. In the details pane, right-click the **empty space**, select **New**, select
-    **Text Document**, and then type **File60** as the name of the file.
-    _**Note**: Max has permissions to create a new file in the Research share because
-	his department claim has a value of Research._
+    **Text Document**, and then type +++**File60**+++ as the name of the file.
+
+    >[!NOTE] **Note**: Max has permissions to create a new file in the Research share because
+	his department claim has a value of Research.
+
 29. **Sign Out**
 
 ### Task 3: View effective permissions 
-1.  Switch to **LON-CL1**
-2.  In File Explorer, right-click **Marketing**, select **Properties**,     select the **Security tab**, select **Advanced**, and then select     the **Effective Access tab**.
+1.  Switch to @lab.VirtualMachine(LON-CL1).SelectLink.
+2.  In File Explorer, right-click **Marketing**, select **Properties**, select the **Security tab**, select **Advanced**, and then select the **Effective Access tab**.
 3.  In the Advanced Security Settings for Marketing dialog box, select **Select a
-    user**, in the Enter the object name to select (examples) box, **type
-    Ernie**, select **OK**, and then select **View effective access**. View the
+    user**, in the Enter the object name to select (examples) box, type
+    +++**Ernie**+++, select **OK**, and then select **View effective access**. View the
     effective permissions, and then select **OK** twice.
-    _**Note**: As Authenticated Users have the Modify permission to the Marketing
-	folder, you can see that Ernie has the most permissions allowed._
-4.  In File Explorer, right-click **Research**, select **Properties**,     select the **Security tab**, select **Advanced**, and then
+
+    >[!NOTE] **Note**: As Authenticated Users have the Modify permission to the Marketing
+	folder, you can see that Ernie has the most permissions allowed.
+
+4.  In File Explorer, right-click **Research**, select **Properties**, select the **Security tab**, select **Advanced**, and then
     select the **Effective Access tab**.
 5.  In the Advanced Security Settings for Research dialog box, select **Select a
     user**, in the Enter the object name to select (examples) text box, type
-    **Bruno**, select **OK**, and then select **View effective access**.
-    _**Note**: Bruno is a member of Development group._
-    _**Note**: Only users with the department claim with a value of Research have
+    +++**Bruno**+++, select **OK**, and then select **View effective access**.
+
+    >[!NOTE] **Note**: Bruno is a member of Development group.
+
+    >[!NOTE] **Note**: Only users with the department claim with a value of Research have
 	permissions to the folder, you can see that Bruno has no permissions
-	allowed._
+	allowed.
 6.  In the Advanced Security Settings for Research dialog box, select **Include a
-    user claim**, select **department** in the drop-down list, **type Research**
+    user claim**, select **department** in the drop-down list, type +++**Research**+++
     in the Enter value here text box, and then select **View effective access**.
-    _Note: You can see that if Bruno had the department user claim with the value
-	of Research, he would have most permissions allowed._
+    
+    >[!NOTE] **Note**: You can see that if Bruno had the department user claim with the value
+	of Research, he would have most permissions allowed.
+
 7.  In the Advanced Security Settings for Research dialog box, select **Select a
     user**, in the Enter the object name to select (examples) box, type
-    **Arturs**, select **OK**, and then select **View effective access**. Review
+    +++**Arturs**+++, select **OK**, and then select **View effective access**. Review
     the effective permissions, and then select **OK** twice.
-    _**Note**: If Arturs had the user claim of department with the value of Research,
+
+    >[!NOTE] **Note**: If Arturs had the user claim of department with the value of Research,
 	he would have the most permissions allowed._
 8.  Sign out.
 
