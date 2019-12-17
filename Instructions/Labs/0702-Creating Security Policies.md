@@ -1,5 +1,5 @@
 # Practice Lab: Creating Security Policies
- 
+ 
 
 ## Summary
 In this lab you will learn how to create and modify Security Policies.
@@ -20,8 +20,10 @@ succession.
 
 ### Task 1: Configure password and account options
 
-1.  Sign in in to **LON-DC1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in in to @lab.VirtualMachine(LON-DC1).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
 2.  On **LON-DC1**, in Server **Manager**, in the Tools list, select **Group
     Policy Management.**
@@ -77,7 +79,7 @@ succession.
     check box, and then select the **User must change password at next logon**
     check box. select **OK**.
 
->    
+>    
 
 ### Task 2: Refresh GPOs
 
@@ -87,11 +89,13 @@ succession.
 2.  In the Administrator: Windows PowerShell window, type the following command,
     and then press **Enter**:
 
->   Invoke-Gpupdate -force
+    ```
+    Invoke-Gpupdate -force
+    ```
 
 1.  Close the Active Directory Users and Computers and PowerShell window
 
- 
+ 
 
 ## Exercise 2: Testing Security Policies
 
@@ -100,25 +104,27 @@ succession.
 After configuring a more strict set of password policies you will then ask Abbi
 Skinner to test the policies.
 
- 
+ 
 
 ### Task 1: Change your password
 
-1.  Switch to **LON-CL1.**     
+1.  Switch to @lab.VirtualMachine(LON-CL1).SelectLink     
 
-2.  Sign in to **LON-CL1** as **Adatum\\Abbi** with the password **Pa55w.rd**.
+2.  Sign in to **LON-CL1** as +++**Adatum\\Abbi**+++ with the password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
 3.  When the message appears that indicates the user’s password has expired and
     must be changed before signing in, select **OK**.
 
-4.  In the New Password box and the Confirm Password box, type **Pa55w.rd12**,
+4.  In the New Password box and the Confirm Password box, type +++**Pa55w.rd12**+++,
     and then press **Enter**.
 
 5.  When the message displays that indicates that the new password does not meet
     the length, complexity, or history requirements of the domain, select
-    **OK**. Type the old password, **Pa55w.rd**.
+    **OK**. Type the old password, +++**Pa55w.rd**+++.
 
-6.  In the New Password box and the Confirm Password box, type **Pa55w.rd1234**,
+6.  In the New Password box and the Confirm Password box, type +++**Pa55w.rd1234**+++,
     and then press **Enter**.
 
 7.  When a message displays that indicates that the password has been changed,
@@ -130,31 +136,35 @@ Skinner to test the policies.
 9.  At the Windows PowerShell prompt, type the following command, and then press
     **Enter**:
 
->   gpupdate /force
+    ```
+    gpupdate /force
+    ```
 
 1.  Sign out.
 
 ### Task 2: Attempt repeated sign-ins
 
-1.  Attempt to sign in to **LON-CL1** as **Adatum\\Abbi** with the incorrect
-    password **Potato**.
+1.  Attempt to sign in to **LON-CL1** as +++**Adatum\\Abbi**+++ with the incorrect
+    password +++**Potato**+++.
+
+    @lab.CtrlAltDelete
 
 2.  When a message displays that indicates that the password is incorrect,
     select **OK**.
 
-3.  Attempt again to sign in to **LON-CL1** as **Adatum\\Abbi** with the
-    incorrect password **Potato**.
+3.  Attempt again to sign in to **LON-CL1** as +++**Adatum\\Abbi**+++ with the
+    incorrect password +++**Potato**+++.
 
 4.  When a message displays that indicates that the password is incorrect,
     select **OK**.
 
-5.  Attempt again to sign in to **LON-CL1** as **Adatum\\Abbi** with the
-    incorrect password **Potato**.
+5.  Attempt again to sign in to **LON-CL1** as +++**Adatum\\Abbi**+++ with the
+    incorrect password +++**Potato**+++.
 
 6.  When the message displays that indicates that the referenced account is
     locked, and you may not sign in, select **OK**
 
->    
+>    
 
 **Results**: After completing this exercise you created a Security Policy that
 will affect the password settings for all domain users.
