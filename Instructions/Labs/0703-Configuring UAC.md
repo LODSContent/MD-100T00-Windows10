@@ -15,10 +15,12 @@ applications.
 
 ### Task 1: Modify UAC prompts
 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
 
-2.  In the **Type here to search** box on the taskbar, type **gpedit.msc**, and
+    @lab.CtrlAltDelete
+
+2.  In the **Type here to search** box on the taskbar, type +++**gpedit.msc**+++, and
     then press Enter.
 
 3.  In the Local Group Policy Editor, expand **Computer Configuration**, expand
@@ -51,36 +53,40 @@ applications.
 
 11. **Sign out.**
 
->    
+>    
 
 ### Task 2: Test the UAC prompts as a standard user
 
-1.  Login to **LON-CL1** as **Adatum\\Beth** with the password **Pa55w.rd**.
+1.  Login to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Beth**+++ with the password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.  
     **Note**: The Windows operating system displays the User Account Control
     prompt.
 
-3.  In the **User name** box, type **Administrator**, and in the **Password**
-    box, type **Pa55w.rd**, and then select **Yes**.
+3.  In the **User name** box, type +++**Administrator**+++, and in the **Password**
+    box, type +++**Pa55w.rd**+++, and then select **Yes**.
 
 4.  Close the Windows PowerShell prompt.
 
 5.  **Sign out**.
 
->    
+>    
 
 ### Task 3: Test the UAC prompts as an administrator
 
-1.  Login to **LON-CL1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Login to **LON-CL1** as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
 2.  In the **Type here to search** box on the taskbar, type **Control Panel**,
     and then press Enter.
 
 3.  In Control Panel, select **System and Security**.
 
-4.  In **System and Maintenance**, select **Change User Account Control
+4.  In **Security and Maintenance**, select **Change User Account Control
     settings**.
 
 5.  Verify that the slider is configured for **Always notify**.
@@ -89,7 +95,7 @@ applications.
 
 7.  Close all open windows
 
->    
+>    
 
 **Results**: After completing this exercise you have configured the prompt
 behavior of UAC.
