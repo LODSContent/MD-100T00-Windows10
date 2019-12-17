@@ -3,27 +3,34 @@
 ## Summary
 In this lab you will learn how to configure the Internet Explorer Enterprise Mode.
 
-_Dependency Notice: The lab requires that a DNS entry for intranet.adatum.com be added, as instructed in the lab_ Configuring and Testing Name Resolution. _If this lab was skipped, complete Task 5 from that lab before continuing._
+>[!ALERT] **Dependency Notice**: The lab requires that a DNS entry for intranet.adatum.com be added, as instructed in the lab *Configuring and Testing Name Resolution*. If this lab was skipped, complete Task 2 from that lab before continuing.
 
 ### Scenario
 Adatum is using a web based application for travel requests located at intranet.adatum.com. This application is currently only properly working in older Internet Explorer versions. As you recently upgraded all devices to Windows 10 you must ensure that this web site is still working with IE 11.
 
 
 ### Task 1: Verify the site is not displayed in Enterprise Mode
-1.  Sign in to **LON-CL1** as **Adatum\\Harry** with the password **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Harry**+++ with the password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
+
 2.  Select **Start**, and in the list of apps, expand **Windows
     Accessories**, and then select **Internet Explorer.**
 3.  In the Internet Explorer 11 window, select **Use recommended security and
     compatibility settings**, and then select **OK**.
-4.  In the Internet Explorer Address bar, type **http://intranet.adatum.com**,
+4.  In the Internet Explorer Address bar, type +++**http://intranet.adatum.com**+++,
     and then press **Enter**.
 5.  Verify that the website displays correctly.
-6.  Press the **ALT** key, select the **Tools menu**, and then verify that the     Enterprise Mode menu item is not visible.
+6.  Press the **ALT** key, select the **Tools menu**, and then verify that the Enterprise Mode menu item is not visible.
 7.  **Sign out**
 
 ### Task 2: Create a policy for Internet Explorer Enterprise Mode
-1.  Switch to **LON-DC1**.
-2.  Sign in to **LON-DC1** as **Adatum\\Administrator** with the password **Pa55w.rd**.
+1.  Switch to @lab.VirtualMachine(LON-DC1).SelectLink.
+
+2.  Sign in to **LON-DC1** as +++**Adatum\\Administrator**+++ with the password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
+
 3.  Select the **File Explorer** icon on the taskbar.
 4.  In File Explorer, browse to **E:\\LabFiles\\Apps**.
 5.  Double-click the **EMIESiteListManager.msi** file.
@@ -40,17 +47,17 @@ Adatum is using a web based application for travel requests located at intranet.
 12. In the Enterprise Mode Site List Manager for Windows 10 window, select
     **Add**.
 13. In the Add new website window, in the URL text box, type
-    **intranet.adatum.com**. In the Compat Mode drop-down list box, select **IE9
+    +++**intranet.adatum.com**+++. In the Compat Mode drop-down list box, select **IE9
     Document Mode**, and then select **Save**.
 14. If a dialog box opens, select **Yes**.
 15. Select the **File menu**, and then select **Save to XML**.
 16. In the Save as… dialog box, navigate to **c:\\inetpub\\wwwroot**. In the
-    File name text box, type **AdatumEnterpriseMode**, and then select **Save**.
+    File name text box, type +++**AdatumEnterpriseMode**+++, and then select **Save**.
 17. **Close** Enterprise Mode Site List Manager.
 18. Select **Start**, and in the list of apps, expand **Windows
     Accessories**, and then select **Internet Explorer**.
 19. In the Internet Explorer window, in the Address bar, type  
-    **http://lon-dc1.adatum.com/AdatumEnterpriseMode.xml**, and then press
+    +++**http://lon-dc1.adatum.com/AdatumEnterpriseMode.xml**+++, and then press
     **Enter**.
 20. Verify that the XML file opens correctly.
 21. **Close** Internet Explorer.
@@ -62,7 +69,7 @@ Adatum is using a web based application for travel requests located at intranet.
     Adatum.com**, expand **Domains**, expand **Adatum.com**, and select **Group
     Policy Objects**.
 3.  Right-click **Group Policy Objects**, and then select **New**.
-4.  In the New GPO dialog box, in the Name box, type **Internet Explorer Enterprise Mode Policy**,
+4.  In the New GPO dialog box, in the Name box, type +++**Internet Explorer Enterprise Mode Policy**+++,
     and then select **OK**.
 5.  Right-click **Internet Explorer Enterprise Mode Policy**, and then select
     **Edit**.
@@ -78,25 +85,31 @@ Adatum is using a web based application for travel requests located at intranet.
     then press **Enter**.
 10. In the content pane, right-click the **PolicyDefinitions** folder, and then select
     **Copy**.
-11. In the address bar, type **C:\\windows\\SYSVOL\\sysvol\\Adatum.com\\Policies**, and
+11. In the address bar, type +++**C:\\windows\\SYSVOL\\sysvol\\Adatum.com\\Policies**+++, and
     then press **Enter**.
 12. In the content pane, right-click **any empty space**, and then select
     **Paste**.
 13. In the Destination Folder Access Denied dialog select **Continue**
-14. Switch to **LON-CL1**.
-15. Sign in to LON-CL1 as **Adatum\\Administrator** with the password **Pa55w.rd**.
+14. Switch to @lab.VirtualMachine(LON-CL1).SelectLink.
+15. Sign in to LON-CL1 as +++**Adatum\\Administrator**+++ with the password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
+
 16. Select **Start**, and type **cmd**, and press **Enter**.
 17. In the Command Prompt window, type the following two commands, press
     **Enter** after each command, and press **Y** and **Enter** when asked to
     overwrite the files:    
-``` 
-Copy C:\\Windows\\PolicyDefinitions\\inetres.admx \\\\LON-DC1\\SYSVOL\\Adatum.com\\Policies\\PolicyDefinitions\\inetres.admx
-```
-```
-Copy C:\\Windows\\PolicyDefinitions\\en-US\\inetres.adml \\\\LON-DC1\\SYSVOL\\Adatum.com\\Policies\\PolicyDefinitions\\en-US\\inetres.adml
-```
+
+    ```
+    Copy C:\Windows\PolicyDefinitions\\inetres.admx \\LON-DC1\SYSVOL\Adatum.com\Policies\PolicyDefinitions\inetres.admx
+    ```
+
+    ```
+    Copy C:\Windows\PolicyDefinitions\en-US\inetres.adml \\LON-DC1\SYSVOL\Adatum.com\Policies\PolicyDefinitions\en-US\inetres.adml
+    ```
+
 18.  **Sign out** of LON-CL1.
-19.  Switch to **LON-DC1**.
+19.  Switch to @lab.VirtualMachine(LON-DC1).SelectLink.
 20.  On LON-DC1, switch to Group Policy Management Editor window. You should
      still see the available Internet Explorer policy settings in the content
      pane.
@@ -107,7 +120,7 @@ Copy C:\\Windows\\PolicyDefinitions\\en-US\\inetres.adml \\\\LON-DC1\\SYSVOL\\Ad
      list**.
 24.  Select **Enabled**, in the Type the location (URL) of your Enterprise Mode IE
      website list text box, type
-     **http://lon-dc1.adatum.com/AdatumEnterprisemode.xml**, and then select
+     +++**http://lon-dc1.adatum.com/AdatumEnterprisemode.xml**+++, and then select
      **OK**.
 25.  **Close** the Group Policy Management Editor window.
 26.  In the Group Policy Management window, right-click the **Adatum.com
@@ -117,16 +130,23 @@ Copy C:\\Windows\\PolicyDefinitions\\en-US\\inetres.adml \\\\LON-DC1\\SYSVOL\\Ad
 	28. **Close** the Group Policy Management and File Explorer window
 
 ### Task 4: Verify the site is now in enterprise mode
-1.  Switch to **LON-CL1**
-2.  Sign in to **LON-CL1** as **Adatum\\Harry** with the password **Pa55w.rd**.
+1.  Switch to @lab.VirtualMachine(LON-CL1).SelectLink
+2.  Sign in to **LON-CL1** as +++**Adatum\\Harry**+++ with the password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
+
 3.  Select **Start** and type **cmd**. Press **Enter**
 4.  At the command prompt, type the following command, and then press Enter. 
-    `gpupdate /force`
+
+    ```
+    gpupdate /force
+    ```
+
 5.  Select **Start**, and in the list of apps, expand **Windows
     Accessories**, and then select **Internet Explorer**, and then wait two minutes.
 6.  In the Internet Explorer window, press the **ALT** key, select the **Tools**
     menu, and then select **Enterprise Mode**.
-7.  In the Internet Explorer Address bar, type **http://intranet.adatum.com**,
+7.  In the Internet Explorer Address bar, type +++**http://intranet.adatum.com**+++,
     and then press **Enter**.
 8.  Verify that the website displays correctly, and if you press the **ALT**
     key, select the **Tools** menu, and then verify that Enterprise Mode is
