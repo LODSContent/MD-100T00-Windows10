@@ -14,12 +14,14 @@ installation and update process for apps in the Store. The app and
 LeXProductsGrid81_1.1.0.2_AnyCPU certificate have been placed at
 \\\\lon-dc1\\labfiles\\apps.
 
- 
+ 
 
 ### Task 1: Enable sideloading
 
-1.  Sign in to **LON-CL2** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL2).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
 2.  On **LON-CL2** select **Start**, and then select the **Settings** icon..
 
@@ -32,12 +34,12 @@ LeXProductsGrid81_1.1.0.2_AnyCPU certificate have been placed at
 
 6.  Close **Settings**.
 
-###  
+###  
 
 ### Task 2: Install the required certificate
 
 1.  On **LON-CL2**, in the **Type here to search** box, type
-    **\\\\lon-dc1\\labfiles\\apps** and press
+    +++**\\\\lon-dc1\\labfiles\\apps**+++ and press
     **Enter**.
 
 2.  Right-click **LeXProductsGrid81_1.1.0.2_AnyCPU.cer**, and then select
@@ -59,14 +61,16 @@ LeXProductsGrid81_1.1.0.2_AnyCPU certificate have been placed at
 
 8.  Sign out.
 
->    
+>    
 
 ### Task 3: Install and test an app
 
-1.  Sign in to **LON-CL2** as **Adatum\\Beth** with the password **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL2).SelectLink as +++**Adatum\\Beth**+++ with the password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
 2.  On LON-CL2, in the **Type here to search** box, type
-    **\\\\lon-dc1\\labfiles\\apps** and press
+    +++**\\\\lon-dc1\\labfiles\\apps**+++ and press
     **Enter**.
 
 3.  Double-click **App1.appx**.
@@ -80,7 +84,7 @@ LeXProductsGrid81_1.1.0.2_AnyCPU certificate have been placed at
 
 7.  Close the app.
 
->    
+>    
 
 ### Task 4: Remove an app
 
@@ -94,7 +98,7 @@ LeXProductsGrid81_1.1.0.2_AnyCPU certificate have been placed at
 
 4.  Sign out
 
- 
+ 
 
 **Results**: During this lab you enabled Sideloading for apps, sideloaded one
 app, and uninstalled the sideloaded app.
