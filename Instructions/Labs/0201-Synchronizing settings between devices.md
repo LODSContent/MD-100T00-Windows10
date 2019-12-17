@@ -21,6 +21,8 @@ two devices. You've decided to use a new Microsoft Account to do this.
 1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
     +++**Pa55w.rd**+++.
 
+    @lab.CtrlAltDelete
+
 2.  Select **Start**, and then select the **Settings** icon.
 
 3.  In the **Settings** app select **Accounts.**
@@ -81,7 +83,9 @@ number to receive the verification code.
 
 ### Task 2: Sign in and personalize the device
 
-1.  Sign in to **LON-CL1** as +++@lab.Variable(MSaccount)+++ with the password +++**Pa55w.rd123**+++.
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++@lab.Variable(MSaccount)+++ with the password +++**Pa55w.rd123**+++.
+
+    @lab.CtrlAltDelete
 
     >[!NOTE] The account name above should be the concatenation of  *Your first name* + *Last name’s first
 letter* + **MD100@outlook.com**. If it is not, you did not enter the sign in name correctly in the text box above.
@@ -102,9 +106,11 @@ Other Windows settings are both enabled.
 
 8.  Close **Settings**.
 
-    >[!ALERT] You will not be able to perform steps 9, 10 and 11 below unless Windows 10 is activated with a valid license. If this is the case, please proceed to step 12.
+    >[!ALERT] You will not be able to perform steps 9, 10 and 11 below unless Winodows 10 is activated with a valid license. If this is the case, please proceed to step 12.
 
 9.  On the desktop right-click the empty space and select **Personalize.**
+
+
 
 10. Select **Background** on the left and choose a different color.
 
@@ -127,9 +133,13 @@ part of the screen to re-position where the taskbar is.
 
 ### Task 3: Sign in on another device
 
-1.  Switch to **LON-CL3**.
+1.  Switch to @lab.VirtualMachine(LON-CL3).SelectLink.
 
-2.  Sign in to **LON-CL3** as **LON-CL3\\Admin** with the password **Pa55w.rd**.
+    
+2.  Sign in to **LON-CL3** as +++**LON-CL3\\Admin**+++ with the password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
+
 
 3.  Select **Start**, and then select the **Settings** icon.
 
