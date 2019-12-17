@@ -12,12 +12,14 @@ Some users want to install specific Microsoft Store apps for their work. Before
 allowing them to do so you want to test the download and update functionality of
 the Microsoft App Store using the Microsoft To-Do app.
 
- 
+ 
 
 ### Task 1: Enable Windows Update
 
-1.  Sign in to **LON-CL1** as **adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 
@@ -26,19 +28,25 @@ the Microsoft App Store using the Microsoft To-Do app.
 4.  In the **Administrator: Windows PowerShell** window, type **the following
     command** and then press **Enter**.
 
->   Set-Service wuauserv -Startuptype Manual
+    ```
+    Set-Service wuauserv -Startuptype Manual
 
->   *Note: For the lab setup, the Windows Update service is disabled. The above
->   command is not necessary to run in typical Windows 10 scenarios.*
+    ```
+
+    >[!NOTE]Note: For the lab setup, the Windows Update service is disabled. The above
+command is not necessary to run in typical Windows 10 scenarios.
 
 1.  Sign out
 
->    
+>    
 
 ### Task 2: Configure app updates
 
-1.  Sign in to LON-CL1 as Your first name + Last name’s first
-    letterMD100\@outlook.com with your PIN or the password **Pa55w.rd123**.
+1.  Sign in to LON-CL1 as +++@lab.Variable(MSaccount)+++
+
+    @lab.CtrlAltDelete
+
+    >[!NOTE] The account name above should be the concatenation of Your first name + Last name’s first letter + MD100@outlook.com. If it is not, you did not enter the sign in name correctly in a text box provided for this purpose in an earlier. If this is the case, enter the username according to the pattern described in this note. 
 
 2.  In the taskbar, select the **Microsoft Store** icon.
 
@@ -50,14 +58,14 @@ the Microsoft App Store using the Microsoft To-Do app.
 
 5.  Select **Back**.
 
-###  
+###  
 
 ### Task 3: Install an app
 
 1.  In the Microsoft Store app, select **Search**, type **Microsoft To-Do**, and
     then select **Microsoft To-Do**.
 
-2.  Select **Install**.  
+2.  Select **Install**.  
 
 >   *Note: If prompted by the Your account is missing some key info dialog box,
 >   complete the information regarding Birthdate and Country/Region and select
@@ -67,7 +75,7 @@ the Microsoft App Store using the Microsoft To-Do app.
 
 2.  Wait for the installation to finish.
 
->    
+>    
 
 ### Task 4: Update and remove apps
 
@@ -91,7 +99,7 @@ the Microsoft App Store using the Microsoft To-Do app.
 
 8.  Sign out
 
- 
+ 
 
 **Results**: After completing this exercise, you will have installed a Microsoft
 Store app and managed Microsoft Store app updates.
