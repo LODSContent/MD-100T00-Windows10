@@ -176,7 +176,7 @@ to enter the password*
 ### Task 4: Verify if keyboard is working
 
 1.  Sign in to **LON-CL1** as +++**Adatum\\Administrator**+++ with the password of
-    +++**Pa55w.rd.**+++
+    +++**Pa55w.rd**+++
 
     @lab.CtrlAltDelete
 
