@@ -22,6 +22,8 @@ can be seen in the queue on LON-CL1.
 
 1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
     +++**Pa55w.rd**+++.
+    
+    @lab.CtrlAltDelete
 
 2.  In the taskbar, in the **Type here to search** text box, type +++**Control
     Panel**+++, and then select **Control Panel**.
@@ -106,6 +108,8 @@ can be seen in the queue on LON-CL1.
 1.  Switch to @lab.VirtualMachine(LON-CL2).SelectLink.
 
 2.  Sign in to LON-CL2 as +++**Adatum\\Beth**+++ with the password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
     >[!NOTE]**Note**: Beth is member of the IT group, but she is not a member of the
 Managers group.
