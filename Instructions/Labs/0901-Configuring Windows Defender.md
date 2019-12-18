@@ -1,4 +1,3 @@
-
 # Practice Lab: Configuring Windows Defender 
 
 ## Summary
@@ -6,7 +5,7 @@
 In this exercise you will learn how to configure Windows Defender.
 
 ### Scenario
-You've been asked to test if Windows Defender is properly working on LON-CL3. You've decided to simulate a virus using a special test file, sample.txt, located in \\\\LON-DC1\\labfiles\\Threat folder, to see if it will be properly detect as a virus. 
+You've been asked to test if Windows Defender is properly working on LON-CL3. You've decided to simulate a virus using a special test file, sample.txt, located in \\\\LON-DC1\\labfiles\\Threat folder, to see if it will be properly detected as a virus. 
 
 ### Task 1: Perform a quick scan
 1.  Sign in to @lab.VirtualMachine(LON-CL3).SelectLink as +++**Adatum\\Administrator**+++ with the password +++**Pa55w.rd**+++.
@@ -33,7 +32,7 @@ You've been asked to test if Windows Defender is properly working on LON-CL3. Yo
 
 5.  In the sample.txt file, **delete both instances of &ltremove&gt,** including
     the brackets and any extra lines or blank spaces.
-6.  Select**Save** and close Notepad.
+6.  Select **Save** and close Notepad.
 
     >[!NOTE]**Note**: Windows Defender will immediately detect a potential threat.
 
