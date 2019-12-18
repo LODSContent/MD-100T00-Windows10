@@ -29,6 +29,8 @@ the PowerShell ISE.
 
 1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
     +++**Pa55w.rd**+++
+    
+    @lab.CtrlAltDelete
 
 2.  Select **Start** and type **PowerShell**. Select **Run as administrator**.
     In the User Account Control window select **Yes**.
