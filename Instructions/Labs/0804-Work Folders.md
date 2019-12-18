@@ -21,7 +21,7 @@ running and synchronization conflicts are handled.
 ### Task 1: Install and Configure Work Folders
 
 1.  Sign in to @lab.VirtualMachine(LON-DC1).SelectLink as +++**Adatum\\Administrator**+++ with the password
-    +++**Pa55w.rd.**+++
+    +++**Pa55w.rd**+++
 
     @lab.CtrlAltDelete
 
