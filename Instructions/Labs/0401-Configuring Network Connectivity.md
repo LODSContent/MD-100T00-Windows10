@@ -20,6 +20,8 @@ devices.
 
 1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
     +++**Pa55w.rd**+++.
+    
+    @lab.CtrlAltDelete
 
 2.  Select the **Network** icon in the notification area, and then select
     **Network & Internet settings**.
@@ -211,6 +213,8 @@ obtained DHCP lease on the DHCP server LON-DC1.
 
 2.  Sign in to LON-DC1 as +++**Adatum\\Administrator**+++ with the password
     +++**Pa55w.rd**+++.
+    
+    @lab.CtrlAltDelete
 
 3.  In **Server Manager**, select **Tools**, and then select **DHCP**.
 
