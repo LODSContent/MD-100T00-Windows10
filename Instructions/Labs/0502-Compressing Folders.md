@@ -8,6 +8,9 @@ You notice that on LON-CL3, the C:\Users on folder is taking quite an amount of 
  
 ### Task 1: Verify current folder size
 1.  Sign in to @lab.VirtualMachine(LON-CL3).SelectLink as +++**LON-CL3\\Admin**+++ with the password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
+
 2.  Select the **File Explorer** icon on the taskbar.
 3.  Navigate to the **C:\\Users folder**. Right-click the **Admin folder**, and then select **Properties**.
 4.  On the General tab, note the Size on Disk in megabytes in the text box below:
