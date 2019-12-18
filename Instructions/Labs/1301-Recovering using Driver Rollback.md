@@ -14,18 +14,20 @@ the issue.
 
 ### Task 1: Configure a picture password as a sign-in option
 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password of
-    **Pa55w.rd.**
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password of
+    +++**Pa55w.rd.**+++
 
-2.  In L**ON-CL1**, select the **Start** icon, and then select **Settings**.
+    @lab.CtrlAltDelete
+
+2.  In **LON-CL1**, select the **Start** icon, and then select **Settings**.
 
 3.  In the **Settings** dialog box, select **Accounts**, select **Sign-in
     options**, and then in the **Picture password** section, select **Add**. In
-    the **Windows Security** dialog box, enter **Pa55w.rd** as the password, and
+    the **Windows Security** dialog box, enter +++**Pa55w.rd**+++ as the password, and
     then select **OK**.
 
 4.  In the Welcome to picture password window, select **Choose picture**, browse
-    to **C:\\Windows\\Web\\Screen**, select **img100.jpg**, select **Open**, and
+    to +++**C:\\Windows\\Web\\Screen**+++, select **img100.jpg**, select **Open**, and
     then select **Use this picture**.
 
 5.  Follow the on-screen instructions, and then draw three gestures on the
@@ -35,10 +37,10 @@ the issue.
 6.  Repeat the pattern to confirm, select **Finish**, and then close the
     Settings window.
 
->   *Note: Due to the restrictions of the lab environment VMs, this process is
->   in-place to ensure you are able to continue the lab.*
+    >[!NOTE]**Note**: Due to the restrictions of the lab environment VMs, this process is
+in-place to ensure you are able to continue the lab.
 
->    
+>    
 
 ### Task 2: Update a driver in Device Manager
 
@@ -55,7 +57,7 @@ the issue.
 4.  In the **Update Drivers – Standard PS/2 Keyboard** dialog box, select
     **Browse my computer for driver software**.
 
-5.  On the **Browse for drivers on your compute**r page, select **Let me pick
+5.  On the **Browse for drivers on your computer** page, select **Let me pick
     from a list of available drivers on my computer**.
 
 6.  On the **Select the device driver you want to install for this hardware**
@@ -67,17 +69,19 @@ the issue.
 7.  In the **System Settings Change** dialog box, select **Yes**, and then wait
     until the computer restarts.
 
->    
+>    
 
 ### Task 3: Roll back a driver using Safe mode
 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** by repeating the three
+1.  Sign in to **LON-CL1** as +++**Adatum\\Administrator**+++ by repeating the three
     gestures that you defined for the picture password in Task 1.
 
-2.  On the taskbar, in the **Type here to search** box, type **notepad**, and
-    then press Enter.    
+    @lab.CtrlAltDelete
 
->   *Note: If the keyboard is not working, you should skip steps 2, 3, and 7.*
+2.  On the taskbar, in the **Type here to search** box, type **notepad**, and
+    then press Enter.    
+
+    >[!NOTE]**Note**: If the keyboard is not working, you should skip steps 2, 3, and 7.
 
 1.  In Notepad, type your name to confirm that the keyboard is still working.
 
@@ -96,7 +100,7 @@ the issue.
     **Driver** tab. Confirm that Roll Back Driver is available, and select
     **Cancel.**
 
-7.  **Close Device Manager.**
+7.  Close **Device Manager.**
 
 8.  Right-click the **Start** icon, and then select **Computer Management**.
 
@@ -122,11 +126,11 @@ the issue.
 
 16. After restarting, press **4** to select **Enable Safe Mode**.
 
-17. When the computer starts, sign in as **Adatum\\Administrator** and use
-    **Pa55w.rd** as the password.
+17. When the computer starts, sign in as +++**Adatum\\Administrator**+++ and use
+    +++**Pa55w.rd**+++ as the password.
 
->   *Note: As the keyboard is not working you need to use the onboard keyboard
->   to enter the password*
+    >[!NOTE]**Note**: As the keyboard is not working you need to use the onboard keyboard
+to enter the password*
 
 1.  Verify that the words Safe Mode appear in all four corners of the desktop.
     Right-click the **Start** icon, and then select **Device Manager**.
@@ -139,7 +143,7 @@ the issue.
     driver rollback can go back by only one version, and then select **Close**.
 
 4.  On the taskbar, in the **Type here to search** box, type **notepad**, and
-    then press **Enter. **
+    then press **Enter**.
 
 5.  In Notepad, type your name to confirm that the keyboard is working again,
     and then close Notepad without saving changes.
@@ -167,15 +171,17 @@ the issue.
 
 12. Restart LON-CL1.
 
- 
+ 
 
 ### Task 4: Verify if keyboard is working
 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password of
-    **Pa55w.rd.**
+1.  Sign in to **LON-CL1** as +++**Adatum\\Administrator**+++ with the password of
+    +++**Pa55w.rd.**+++
+
+    @lab.CtrlAltDelete
 
 2.  On the taskbar, in the **Type here to search** box, type **notepad**, and
-    then press Enter.    
+    then press Enter.    
 
 3.  In Notepad, type your name to confirm that the keyboard is again working.
 
@@ -190,7 +196,7 @@ the issue.
 
 8.  Close all open windows
 
- 
+ 
 
 **Results**: After completing this exercise, you should have successfully rolled
 back a driver and browsed safe mode.
