@@ -4,7 +4,7 @@
 In this exercise you will learn how configure File History and use to restore
 previous versions of a file.
 
- 
+ 
 
 ## Exercise 1: Configure File History
 
@@ -14,25 +14,27 @@ You have been asked to ensure users can recover deleted files in the Documents
 library on LON-CL3 using File History, with the FileHistory shared folder on
 LON-DC1. The solution needs to be tested.
 
- 
+ 
 
 ### Task 1: Create a shared folder for File History
 
-1.  Sign in to **LON-DC1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-DC1).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
 2.  On **LON-DC1**, select the **File Explorer** icon on the taskbar. In the
     navigation pane, select **AllFiles (E:)**.
 
 3.  In File Explorer, in the details pane, right-click an empty space, point to
-    **New**, and then select **Folder**. Type **FileHistory** as the folder
+    **New**, and then select **Folder**. Type +++**FileHistory**+++ as the folder
     name, and then press Enter.
 
 4.  Right-click the **FileHistory** folder, and then select **Properties**.
 
 5.  In the **FileHistory Properties** dialog box, on the **Security** tab,
     select **Edit**. Select **Add**, in the **Enter the object names to select**
-    box, type **Domain**, and then select **OK**.
+    box, type +++**Domain**+++, and then select **OK**.
 
 6.  Select **Domain Users**, and then select **OK**.
 
@@ -52,10 +54,12 @@ LON-DC1. The solution needs to be tested.
 
 ### Task 2: Configure and test File History
 
-1.  Switch to **LON-CL3**
+1.  Switch to @lab.VirtualMachine(LON-CL3).SelectLink
 
-2.  Sign-in to **LON-CL3** as **Adatum\\Administrator**, with the password
-    **Pa55w.rd**.
+2.  Sign-in to **LON-CL3** as +++**Adatum\\Administrator**+++, with the password
+    +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
 3.  On **LON-CL3**, on the taskbar, select the **File Explorer** icon.
 
@@ -64,10 +68,10 @@ LON-DC1. The solution needs to be tested.
     to **New**, select **Text Document**, and then enter **Report** as the name
     of the file.
 
-5.  Double-click **Report.txt**, and in Notepad, type **This is a report**.
+5.  Double-click **Report.txt**, and in Notepad, type +++**This is a report**+++.
     Close the Notepad file, and then select **Save** to save the changes.
 
-6.  On the taskbar, in the **Type here to search** box, type **file history**,
+6.  On the taskbar, in the **Type here to search** box, type +++**file history**+++,
     and then select **Restore your files with File History**.
 
 7.  In the **Home – File History** window, select **Configure File History**
@@ -79,7 +83,7 @@ LON-DC1. The solution needs to be tested.
 9.  In the **Select Drive** dialog box, select **Add network location**.
 
 10. In the **Folder** box, type
-    **\\\\LON-DC1\\FileHistory**, select **Select
+    +++**\\\\LON-DC1\\FileHistory**+++, select **Select
     Folder**, and then select **OK**.
 
 11. In the **File History** window, in the details pane, select **Turn on**.
@@ -122,12 +126,12 @@ and *Reports* folder must both be protected. It needs to be confirmed that
 previous versions of *Reports.txt* are available following a File History
 backup.
 
- 
+ 
 
 ### Task 1: Run the data copy script
 
 1.  On **LON-CL3**, in Windows Explorer, browse to
-    **\\\\LON-DC1\\labfiles\\Support\\**.
+    +++**\\\\LON-DC1\\labfiles\\Support\\**+++.
 
 2.  In the content pane, double-click **CopyUserData** to copy lab files to the
     local client.
@@ -137,7 +141,7 @@ backup.
     **Properties**, select the **Previous Versions** tab, confirm that there are
     no previous versions available, and then select **OK**.
 
- 
+ 
 
 ### Task 2: Configure Additional Folders
 
@@ -151,14 +155,14 @@ backup.
     **Previous Versions** tab, confirm that there are no previous versions
     available, and then select **OK**.
 
-3.  On the taskbar, in the **Type here to search** box, enter **file history**,
+3.  On the taskbar, in the **Type here to search** box, enter +++**file history**+++,
     and then select **Backup settings**.
 
 4.  In the **Settings** window, in the **Back up using File History** section,
     select **More options**.
 
 5.  On the **Backup options** page, in the **Back up these folders** section,
-    select **Add a folder**, in the **Folder** box, type **C:\\Reports**, select
+    select **Add a folder**, in the **Folder** box, type +++**C:\\Reports**+++, select
     **Choose this folder**, and then close the **Settings** window.
 
 6.  In the **File History** window**,** in the **File History is on** section,
