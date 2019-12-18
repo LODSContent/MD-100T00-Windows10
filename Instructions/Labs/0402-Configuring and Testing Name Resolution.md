@@ -26,6 +26,8 @@ settings, clearing the DNS cache, and testing connections to LON-DC1.
 
 1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
     +++**Pa55w.rd**+++.
+    
+    @lab.CtrlAltDelete
 
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 
@@ -126,6 +128,8 @@ functionality.
 
 1.  Sign in to @lab.VirtualMachine(LON-DC1).SelectLink as +++**Adatum\\Administrator**+++ with the password
     +++**Pa55w.rd**+++.
+    
+    @lab.CtrlAltDelete
 
 2.  Launch **Server Manager** (if it's not already open).
 
