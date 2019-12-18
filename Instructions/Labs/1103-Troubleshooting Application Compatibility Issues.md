@@ -8,8 +8,10 @@ Benjamin has filed an incident report that states that the Stock Viewer applicat
 
 
 ### Task 1: Identify compatibility issues 
-1.  If necessary, sign in to **LON-CL1** as **Adatum\\Benjamin** with the
-    password **Pa55w.rd**.
+1.  If necessary, sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Benjamin**+++ with the
+    password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 2.  On the desktop, on the taskbar, select the **File Explorer** icon.
 3.  Navigate to **C:\\Program Files (x86)\\StockViewer**, and then double-click
     **StockViewer**.
@@ -35,22 +37,24 @@ Benjamin has filed an incident report that states that the Stock Viewer applicat
 18.  **Close** Stock Viewer, and then **sign out** of LON-CL1.
 
 ### Task 2: Create a compatibility fix 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to **LON-CL1** as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 2.  Click the Start button. In the list of apps, select **Windows Kits**, and
     then select **Compatibility Administrator (32bit)**.
 3.  In the **Compatibility Administrator (32-bit) – New Database (1)
     [Untitled_1]** dialog box, right-click **New Database(1) [Untitled_1]**, and
     then select **Rename**.
 
-4.  Type **AdatumACT**, and then press **Enter**.
+4.  Type +++**AdatumACT**+++, and then press **Enter**.
 5.  In the Compatibility Administrator window, right-click **AdatumACT
     [Untitled_1]\*,** select **Create New**, and then select **Application Fix**.
 6.  In the Create New Application Fix Wizard, in the Name of the program to be
     fixed text box, type **StockViewer**.
 7.  Click Browse.
-8.  In the Find Binary window, browse to **C:\\Program Files
-    (x86)\\StockViewer\\StockViewer.exe**, and then select **Open**.
+8.  In the Find Binary window, browse to +++**C:\\Program Files
+    (x86)\\StockViewer\\StockViewer.exe**+++, and then select **Open**.
 9.  In the Create new Application Fix window, select **Next**.
 10. On the Compatibility Modes page, select the **Run this program in
     compatibility mode** for check box, select the **drop-down list**, and then
@@ -61,28 +65,34 @@ Benjamin has filed an incident report that states that the Stock Viewer applicat
 13. On the Matching Information page, select **Finish**.
 14. In the Compatibility Administrator window, select **Save**.
 15. In the Save Database window, browse to **c:\\**.
-16. In the File name text box, type **AdatumACT**, and then select **Save**.
+16. In the File name text box, type +++**AdatumACT**+++, and then select **Save**.
 17. Close the Compatibility Administrator window.
 18. **Sign out** of LON-CL1.
 
 ### Task 3: Test the compatibility fix 
-1.  Sign in to **LON-CL1** as **Adatum\\Benjamin** with the password
-    **Pa55w.rd**.
+1.  Sign in to **LON-CL1** as +++**Adatum\\Benjamin**+++ with the password
+    +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 2.  Click **Start**, and type **cmd**, right-click on **Command Prompt**, and
     select **Run as Administrator**.
 3.  In the User Account Control dialog box, enter the following credentials, and
     then select **Yes**:
-- User name: **Adatum\\administrator**
-- Password: **Pa55w.rd**
+    - User name: +++**Adatum\\administrator**+++
+    - Password: +++**Pa55w.rd**+++
 4.  At the command prompt, type the following command, and then press **Enter**:
-` Sdbinst C:\\AdatumACT.sdb`
+
+    ```
+    Sdbinst C:\AdatumACT.sdb
+    ```
+
 5.  On the desktop, on the taskbar, select the **File Explorer** icon.
 6.  In File Explorer, navigate to **C:\\Program Files (x86)\\StockViewer** and
     then double-click **StockViewer**.
 7.  In the User Account Control dialog box, enter the following credentials, and
     then select **Yes**:
-- User name: **Adatum\\administrator**
-- Password: **Pa55w.rd**
+    - User name: +++**Adatum\\administrator**+++
+    - Password: +++**Pa55w.rd**+++
 8.  On the Stock Viewer toolbar, select **Trends**.
 9.  On the Tools menu, select **Options**.
 10.  Click **OK** to close the message box.
