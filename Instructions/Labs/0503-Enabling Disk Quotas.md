@@ -17,6 +17,8 @@ their files. You decide to create disk quotas of 500 MB with a warning set at
 
 1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
     +++**Pa55w.rd**+++.
+    
+    @lab.CtrlAltDelete
 
 2.  Select the **File Explorer** icon on the taskbar.
 
@@ -79,6 +81,8 @@ their files. You decide to create disk quotas of 500 MB with a warning set at
 ### Task 3: Verify the disk quota functionality 
 
 1.  Sign in as +++**Adatum\\Administrator**+++ with the password +++**Pa55w.rd**+++
+
+    @lab.CtrlAltDelete
 
 2.  Select the **File Explorer** icon on the taskbar.
 
