@@ -9,6 +9,9 @@ Your company is planning to open a new branch office. To manage the devices in t
 
 ### Task 1: Test PowerShell Remoting
 1.  Sign in to @lab.VirtualMachine(LON-CL2).SelectLink as +++**adatum\\Administrator**+++ with the password: +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
+    
 2.  Right-click **Start**, and then select **Windows PowerShell**.
 3.  In the Windows PowerShell window, type the following command, and then press **Enter**:
 
@@ -50,6 +53,9 @@ Your company is planning to open a new branch office. To manage the devices in t
 ### Task 2: Disable PowerShell Remoting
 1.  Switch to @lab.VirtualMachine(LON-CL1).SelectLink.
 2.  Sign in to **LON-CL1** as +++**adatum\\Administrator**+++ with the password: +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
+    
 3.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 4.  In the Administrator: Windows PowerShell window, type the following command, and then press **Enter**:
 
