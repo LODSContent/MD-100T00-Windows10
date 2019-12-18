@@ -18,7 +18,7 @@ VM to an checkpoint as a backup solution in case the install fails.
 ### Task 1: Creating a virtual machine in Hyper-V
 
 1.  Sign in to @lab.VirtualMachine(LON-HOST1).SelectLink as +++**ADATUM\\Administrator**+++ with the password
-    +++**Pa55w.rd.**+++
+    +++**Pa55w.rd**+++
 
 2.  In the taskbar select the **Hyper V Manager** icon.
 
