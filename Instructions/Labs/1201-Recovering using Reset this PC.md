@@ -14,15 +14,17 @@ like to still retain the user files on the PC.
 
 ### Task 1: Use the Reset this PC option
 
-1.  Sign in to **LON-CL2** as **Adatum\\Administrato**r with the password of
-    **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL2).SelectLink as +++**Adatum\\Administrator**+++ with the password of
+    +++**Pa55w.rd**+++.
+    
+    @lab.CtrlAltDelete
 
 2.  On **LON-CL2**, right-click the desktop, point to **New**, select **Text
-    Document**, type **Report** as its name, and then press Enter.
+    Document**, type +++**Report**+++ as its name, and then press Enter.
 
 3.  Right-click the **Start** icon, select **Windows PowerShell**.
 
-4.  In the **Windows PowerShell** prompt, type ipconfig /all and then press
+4.  In the **Windows PowerShell** prompt, type +++ipconfig /all+++ and then press
     **Enter.**
 
 5.  Verify that the Ethernet connection is not Dynamic Host Configuration
@@ -34,7 +36,7 @@ like to still retain the user files on the PC.
 7.  Verify that the device name is **LON-CL2** and that it is in the
     **Adatum.com** domain.
 
-8.  In the Windows PowerShell prompt, type shutdown /r /o, and then press
+8.  In the Windows PowerShell prompt, type +++shutdown /r /o+++, and then press
     **Enter**.
 
 9.  In the **You’re about to be signed out** dialog box, select **Close** and
@@ -57,20 +59,22 @@ like to still retain the user files on the PC.
 
 ### Task 2: Verify that Reset this PC was successful
 
-1.  Sign in to **LON-CL2** as **Adatum\\Administrator** with the password of
-    **Pa55w.rd**.
+1.  Sign in to **LON-CL2** as +++**Adatum\\Administrator**+++ with the password of
+    +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
 2.  In LON-CL2 check if the file Report.txt is still available on the desktop.
 
 3.  Right-click the **Start** icon, select **Windows PowerShell**.
 
-4.  In the **Windows PowerShell** prompt, type ipconfig /all and then press
+4.  In the **Windows PowerShell** prompt, type +++ipconfig /all+++ and then press
     **Enter**,
 
 5.  Verify that the Ethernet connection is now Dynamic Host Configuration
     Protocol–enabled (DHCP-enabled).
 
-6.  In the Windows PowerShell prompt, type sysdm.cpl and then press **Enter**.
+6.  In the Windows PowerShell prompt, type +++sysdm.cpl+++ and then press **Enter**.
 
 7.  Verify that the device name is LON-CL2 and that it is in the Adatum.com
     domain.
