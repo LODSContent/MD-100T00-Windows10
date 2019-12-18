@@ -12,6 +12,9 @@ LON-CL3 needs to be able to store video on an additional hard drive. Additional 
 
 ### Task 1: Use Disk Management to initialize a disk
 1.  Sign in to @lab.VirtualMachine(LON-CL3).SelectLink as +++**LON-CL3\\Admin**+++ with the password +++**Pa55w.rd**+++
+
+    @lab.CtrlAltDelete
+    
 2.  Right-click Start and select **Disk Management**.
 3.  In the Initialize Disk window, **clear the Disk 2 and Disk 3** check boxes,
     and then select **OK**. You can see that Disk 1 now has a status of Online.
