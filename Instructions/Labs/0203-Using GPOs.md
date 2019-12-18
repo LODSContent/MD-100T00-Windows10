@@ -18,6 +18,8 @@ disabled. You decide to use a domain wide GPO that is scoped to LON-CL2.
 
 1.  Sign in to @lab.VirtualMachine(LON-DC1).SelectLink as +++**Adatum\\Administrator**+++ with the password
     +++**Pa55w.rd**+++
+    
+    @lab.CtrlAltDelete
 
 2.  On **LON-DC1**, in Server Manager, in the **Tools** list, select **Group
     Policy Management**.
@@ -97,6 +99,8 @@ disabled. You decide to use a domain wide GPO that is scoped to LON-CL2.
 
 1.  Sign in to **LON-CL2** as **Adatum\\Administrator** with the password
     **Pa55w.rd**
+    
+    @lab.CtrlAltDelete
 
 2.  On **LON-CL2** select **Start** and type **cmd**. Press **Enter**
 
