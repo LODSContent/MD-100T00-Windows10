@@ -77,7 +77,7 @@ return to a previous working state.
 
 1.  After LON-CL3 has restarted:
 
->   **Note**: The mouse does not work.
+    >[!NOTE]**Note**: The mouse does not work.
 
 1.  Sign in to **LON-CL3** as +++**Adatum\\Administrator**+++ with the password of
     +++**Pa55w.rd**+++.
@@ -99,8 +99,8 @@ return to a previous working state.
 6.  On the Advanced options page, highlight **System Restore** and press
     **Enter**.
 
->   **Note:** As mouse functions may be restored, you may be able to select on
->   options instead of the keyboard.
+    >[!NOTE]**Note:** As mouse functions may be restored, you may be able to select on
+options instead of the keyboard.
 
 1.  On the System Restore page, with **Admin** highlighted, press **Enter**.
     Type +++**Pa55w.rd**+++ for the password, and press **Enter**.
