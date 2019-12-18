@@ -20,6 +20,8 @@ staff playing the presentations while on battery.
 
 1.  Sign in to @lab.VirtualMachine(LON-CL3).SelectLink as +++**LON-CL3\\Admin**+++ with the password +++**Pa55w.rd**+++.
 
+    @lab.CtrlAltDelete
+
     >[!Alert] Before proceeding, please confirm that a folder named C:\UTIL exists. If it does not, please create the folder.
 
 2.  On **LON-CL3** select **Start,** and then select the **Settings** icon.
