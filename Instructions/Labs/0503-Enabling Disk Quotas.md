@@ -46,7 +46,7 @@ their files. You decide to create disk quotas of 500 MB with a warning set at
 
 ### Task 2: Create test files
 
-1.  Sign in as the user +++**Adatum\\ada**+++ with the password +++**Pa55w.rd.**+++
+1.  Sign in as the user +++**Adatum\\ada**+++ with the password +++**Pa55w.rd**+++
 
 2.  Select **Start**, and then type +++**cmd**+++. Press **Enter**.
 
