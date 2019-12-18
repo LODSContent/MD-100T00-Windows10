@@ -15,7 +15,7 @@ the issue.
 ### Task 1: Configure a picture password as a sign-in option
 
 1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password of
-    +++**Pa55w.rd.**+++
+    +++**Pa55w.rd**+++
 
     @lab.CtrlAltDelete
 
