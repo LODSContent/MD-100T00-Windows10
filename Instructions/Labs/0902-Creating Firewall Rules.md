@@ -3,7 +3,7 @@
 ## Summary
 In this exercise you will learn how to create and configure firewall rules to block and allow specific service connections to a device.
 
-_Dependancy Notice: Remote Desktop must be enabled on LON-CL1 if the Remote Managment lab was not peformed._
+>[!ALERT]**Dependancy Notice**: Remote Desktop must be enabled on LON-CL1 if the Remote Managment lab was not peformed.
 
 ## Exercise 1: Creating and Testing Inbound Rules  
 
@@ -11,18 +11,22 @@ _Dependancy Notice: Remote Desktop must be enabled on LON-CL1 if the Remote Mana
 Your security officer has requested that users on LON-CL2 are not allowed to remote desktop into LON-CL1 whereas users from other devices are allowed. 
 
 ### Task 1: Test existing functionality
-1.  Sign in to **LON-CL2** as **Adatum\\Administrator** with the password
+1.  Sign in to @lab.VirtualMachine(LON-CL2).SelectLink as +++**Adatum\\Administrator**+++ with the password
     **Pa55w.rd**.
-2.  Select **Start**, type **mstsc.exe**, and then press **Enter**.
+
+    @lab.CtrlAltDelete
+2.  Select **Start**, type +++**mstsc.exe**+++, and then press **Enter**.
 3.  In the Computer box, type **LON-CL1**, and then press **Enter**.
 4.  In the Windows Security dialog, in the password box enter **Pa55w.rd**, and then select **OK**
 5.  Select **Start** on **LON-CL1**, select **Administrator**, and then
     select **Sign out**.
 
 ### Task 2: Create an inbound rule 
-1.  Switch to **LON-CL1**.
+1.  Switch to @lab.VirtualMachine(LON-CL1).SelectLink.
+
+    @lab.CtrlAltDelete
 2.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password **Pa55w.rd**.
-3.  Select **Start**, and type **control**, then select **Control Panel**.
+3.  Select **Start**, and type +++**control**+++, then select **Control Panel**.
 4.  Select **System and Security**, and then select **Windows Defender Firewall**.
 5.  In the left pane, select **Advanced settings**, select **Inbound Rules**, and
     then select **New Rule**.
@@ -34,9 +38,9 @@ Your security officer has requested that users on LON-CL2 are not allowed to rem
 9.  **Minimize** the Windows Firewall with Advanced Security window.
 
 ### Task 3: Test the rule ###
-1.  Switch to **LON-CL2**.
-2.  Select **Start**, type **mstsc.exe**, and then press **Enter**.
-3.  In the Computer box, type **LON-CL1**, and then press **Enter**.
+1.  Switch to @lab.VirtualMachine(LON-CL2).SelectLink.
+2.  Select **Start**, type +++**mstsc.exe**+++, and then press **Enter**.
+3.  In the Computer box, type +++**LON-CL1**+++, and then press **Enter**.
 4.  In the Remote Desktop Connection window, select **OK**.
 5.  Verify that the connection attempt fails.
 6.  Close all open windows.
@@ -49,16 +53,22 @@ Your security officer has requested that users on LON-CL2 are not allowed to rem
 LON-DC1 also needs to be configured to allow remote desktop connections, however LON-CL1's configuration should not allow remote desktop connections to LON-DC1.
 
 ### Task 1: Test existing functionality ###
-1.  **Switch to LON-DC1**
-2.  Sign in to **LON-DC1** as **Adatum\\Administrator** with the password  **Pa55w.rd**
-3.  Right-click **Advanced System Settings**.
+1.  Switch to @lab.VirtualMachine(LON-DC1).SelectLink.
+2.  Sign in to **LON-DC1** as +++**Adatum\\Administrator**+++ with the password  +++**Pa55w.rd**+++
+
+    @lab.CtrlAltDelete
+
+3.  Select **Start**, and type +++**Advanced System Settings**+++.
+3.  Select **View advanced system settings** to open the System Properties dialog box.
+
+    >[!TIP]The System Properties may be minimized on the taskbar.
 4.  In the System Properties window select the **Remote** tab.
 5.  Select **Allow remote connections to this computer** and select **OK**. 
 6.  Close the **System** window.
-7.  Switch to **LON-CL1**.
-8.  Select **Start**, type **mstsc.exe**, and then press **Enter**.
-9.  In the Computer box, type **LON-DC1**, and then press **Enter**.
-10. In the Windows Security dialog, in the password box enter  **Pa55w.rd**, and then select **OK**
+7.  Switch to @lab.VirtualMachine(LON-CL1).SelectLink.
+8.  Select **Start**, type +++**mstsc.exe**+++, and then press **Enter**.
+9.  In the Computer box, type +++**LON-DC1**+++, and then press **Enter**.
+10. In the Windows Security dialog, in the password box enter  +++**Pa55w.rd**+++, and then select **OK**
 11. Select **Start** on **LON-DC1**, select **Administrator**, and then select **Sign out**.
 
 ### Task 2: Create an outbound rule 
@@ -81,12 +91,12 @@ LON-DC1 also needs to be configured to allow remote desktop connections, however
 9.  Select the **Scope tab**, and then under the **Remote IP address heading**,
     select the **These IP addresses** option.
 10. Under the Remote IP address heading, select **Add**, in the This IP address
-    or subnet box, type **172.16.0.10**, and then select **OK**.
+    or subnet box, type +++**172.16.0.10**+++, and then select **OK**.
 11. In the Block Outbound RDP to LON-DC1 Properties dialog box, select **OK**.
 
 ### Task 3: Test the rule ###
-1.  Select **Start**, type **mstsc.exe**, and then press **Enter**.
-2.  In the Computer box, **type LON-DC1**, and then press **Enter**.
+1.  Select **Start**, type +++**mstsc.exe**+++, and then press **Enter**.
+2.  In the Computer box, +++**type LON-DC1**+++, and then press **Enter**.
 3.  In the Remote Desktop Connection dialog box, select **OK**.
 4.  Verify that the connection attempt fails
 5.  **Close** all open windows.
