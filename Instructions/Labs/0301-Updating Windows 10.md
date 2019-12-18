@@ -11,6 +11,9 @@ Your IT security officer discovers that not all devices are doing properly Windo
 
 ### Task 1: Configure update settings for a single device 
 1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++ADATUM\\Administrator+++ with the Password +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
+    
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**. In the    **User Account Control** window select **Yes**.
 3.  In the Administrator: Windows PowerShell window, type the following command,
     and then press Enter:
