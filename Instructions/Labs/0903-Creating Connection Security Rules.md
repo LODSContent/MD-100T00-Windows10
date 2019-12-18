@@ -18,7 +18,7 @@ Your manager wants you to ensure that all network traffic between LON-CL1 and LO
     ```
 
 4.  Verify that the ping generated four “Reply from 172.16.0.162: bytes=32
-    Time=_x_ms TTL=128” messages. 
+    Time=_x_ ms TTL=128 messages. 
 
     >[!NOTE]**Note**: The times that the message lists may vary from the example.
 5.  Select **Start**, type **control** and select **Control Panel**.
