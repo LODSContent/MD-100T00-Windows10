@@ -62,12 +62,16 @@ Repeatedly users complained about the poor performance of LON-CL3 so you decided
 25. Record the following values:
     -   Memory Pages per second:         
         @lab.TextBox(mps)
-    -   Network Interface Packets per second: @lab.TextBox(nips)
+    -   Network Interface Packets per second:         
+        @lab.TextBox(nips)
     -   Physical Disk % Disk Time:         
         @lab.TextBox(psdt)
-    -   Physical Disk Avg. Disk Queue Length: @lab.TextBox(pddq)
-    -   Processor % Processor Time: @lab.TextBox(ppt)
-    -   System Processor Queue Length: @lab.TextBox(spql)
+    -   Physical Disk Avg. Disk Queue Length:         
+        @lab.TextBox(pddq)
+    -   Processor % Processor Time:         
+        @lab.TextBox(ppt)
+    -   System Processor Queue Length:         
+        @lab.TextBox(spql)
 
 ### Task 2: Load the suspect app ###
 1.  On LON-CL3, In Windows Explorer, browse to +++**\\\\LON-DC1\\labfiles\\Support\\**+++.
@@ -86,7 +90,7 @@ Repeatedly users complained about the poor performance of LON-CL3 so you decided
     MonitorScenario.vbs
     ```
 
-### Task 3: Use Performance Monitor to identify possible bottlenecks ### 
+### Task 3: Use Performance Monitor to identify possible bottlenecks
 1.  On LON-CL3, switch to **Performance Monitor**.
 2.  Under **Data Collector Sets**, select **User Defined**.
 3.  Right-click **Adatum Baseline**, and then select **Start**.
@@ -113,15 +117,20 @@ Repeatedly users complained about the poor performance of LON-CL3 so you decided
 12. Record the component details:
     -   Memory Pages per second:     
         @lab.TextBox(mps2)
-    -   Network Interface Packets per second: @lab.TextBox(nips2)
+    -   Network Interface Packets per second:         
+        @lab.TextBox(nips2)
     -   Physical Disk % Disk Time:         
         @lab.TextBox(psdt2)
-    -   Physical Disk Avg. Disk Queue Length: @lab.TextBox(pddq2)
-    -   Processor % Processor Time: @lab.TextBox(ppt2)
-    -   System Processor Queue Length: @lab.TextBox(spql2)
+    -   Physical Disk Avg. Disk Queue Length:        
+        @lab.TextBox(pddq2)
+    -   Processor % Processor Time:         
+        @lab.TextBox(ppt2)
+    -   System Processor Queue Length:         
+        @lab.TextBox(spql2)
 13. In your opinion, which components is the script affecting the most?
-    _**Note**: The script is affecting the CPU and network, but it is also affecting all
-    counters._
+
+    >[!NOTE] **Note**: The script is affecting the CPU and network, but it is also affecting all
+    counters.
 14. Close all open windows.
 
 **Results**: After completing this exercise, you will have successfully determined the cause of a performance bottleneck.
