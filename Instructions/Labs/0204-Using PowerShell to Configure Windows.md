@@ -28,7 +28,7 @@ the PowerShell ISE.
 ### Task 1: Use Windows PowerShell to configure a device
 
 1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
-    +++**Pa55w.rd.**+++
+    +++**Pa55w.rd**+++
 
 2.  Select **Start** and type **PowerShell**. Select **Run as administrator**.
     In the User Account Control window select **Yes**.
