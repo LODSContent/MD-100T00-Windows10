@@ -9,7 +9,9 @@ You have to replace the computer of one of your colleagues. He requires you to c
 ### Task 1: Prepare the source computer 
 1.  Sign in to @lab.VirtualMachine(LON-CL2).SelectLink as +++**ADATUM\\administrator**+++, Password: +++**Pa55w.rd**+++
 
->[!ALERT] Before proceeding, open File Explorer and navigate to +++\\\\LON-DC1\e$\LabFiles\Install+++ and verify that the MigrationStore folder is present. If folder is not present, please create it.
+    @lab.CtrlAltDelete
+
+    >[!ALERT] Before proceeding, open File Explorer and navigate to +++\\\\LON-DC1\e$\LabFiles\Install+++ and verify that the MigrationStore folder is present. If folder is not present, please create it.
 
 2.  Right-click the **desktop**, hover over the **New** menu item, and then select **Text Document**. Type +++**Demofile**+++ and press **Enter**.
 3.  Double-click **Demofile.txt** and type some random text. Select **File**, and then select the **Save**. Close Notepad.
@@ -33,7 +35,8 @@ You have to replace the computer of one of your colleagues. He requires you to c
 1.  Switch to @lab.VirtualMachine(LON-CL1).SelectLink
 2.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password **Pa55w.rd**
 
-
+    @lab.CtrlAltDelete
+    
     >[!NOTE] Notice that there is no Demofile.txt on the desktop and no OneNote icon in the taskbar.
 
 3.  Select **Start** and type +++**cmd**+++. Select **Run as administrator**. In the  **User Account Control** window select **Yes**
