@@ -26,21 +26,26 @@ You need to investigate why they are not working. \\\\lon-dc1\\labfiles\\Apps\\X
 
       
 ### Task 2: Verify the problem 
-1.  Switch to **LON-CL1**.
+1.  Switch to @lab.VirtualMachine(LON-CL1).SelectLink.
 2.  Sign in by using the following credentials:
--   User name: **Adatum\\Benjamin**
--   Password: **Pa55w.rd**
+    -   User name: +++**Adatum\\Benjamin**+++
+    -   Password: +++**Pa55w.rd**+++
+
+    @lab.CtrlAltDelete
 3.  On the desktop, on the taskbar, select the **File Explorer** icon.
 4.  In the File Explorer address bar, type
-    **\\\\lon-dc1\\labfiles\\Apps\\XmlNotepad.msi**, and then press **Enter**.
+    +++**\\\\lon-dc1\\labfiles\\Apps\\XmlNotepad.msi**+++, and then press **Enter**.
 5.  When installation starts, cancel it by selecting **Cancel,** then select
     **Yes,** then **Finish.**
-    _**Note**: This step shows that the AppLocker policy is not being enforced._
+
+    >[!NOTE] **Note**: This step shows that the AppLocker policy is not being enforced.
 
 ### Task 3: Attempt to resolve the problem with an App Locker policy
-1.  Switch to **LON-DC1.**
-2.  **Sign in** to LON-DC1 as **Adatum\\Administrator** with the password of
-    **Pa55w.rd**.
+1.  Switch to @lab.VirtualMachine(LON-DC1).SelectLink
+2.  Sign in to LON-DC1 as +++**Adatum\\Administrator**+++ with the password of
+    +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 3.  On LON-DC1, in the Server Manager window, select **Tools**, and then select
     **Group Policy Management**.
 4.  In the Group Policy Management window, expand **Forest: Adatum.com**,expand
@@ -58,7 +63,7 @@ You need to investigate why they are not working. \\\\lon-dc1\\labfiles\\Apps\\X
 10. On the Permissions page, select **Deny**, and then select **Next**.
 11. On the Conditions page, select **Path**, and then select **Next**.
 12. On the Path page, select **Browse Files**.
-13. In the File name text box, type **\\\\lon-dc1\\labfiles\\apps**, and then
+13. In the File name text box, type +++**\\\\lon-dc1\\labfiles\\apps**+++, and then
     press **Enter**.
 14. In the Open dialog box, double-click **XmlNotepad.msi**, and then select
     **Next**.
@@ -81,13 +86,15 @@ You need to investigate why they are not working. \\\\lon-dc1\\labfiles\\Apps\\X
     select **Computers**.
 3.  Right-click **LON-CL1**, and then select **Move**.
 4.  In the Move dialog box, select **Marketing**, and then select **OK**.
-5.  Switch to **LON-CL1** and restart LON-CL1.
+5.  Switch to @lab.VirtualMachine(LON-CL1).SelectLink and restart LON-CL1.
 6.  Sign in to **LON-CL1** using the following credentials:
--   User name: **Adatum\\Benjamin**
--   Password: **Pa55w.rd**
+    -   User name: +++**Adatum\\Benjamin**+++
+    -   Password: +++**Pa55w.rd**+++
+
+    @lab.CtrlAltDelete
 7.  On the desktop, on the taskbar, select the **File Explorer** icon.
 8.  In the File Explorer address bar, type
-    **\\\\lon-dc1\\labfiles\\Apps\\XmlNotepad.msi**, and then press **Enter**.
+    +++**\\\\lon-dc1\\labfiles\\Apps\\XmlNotepad.msi**+++, and then press **Enter**.
 9.  In the Windows Installer dialog box, select **OK**.
 10. Sign out.
 11. Update the Resolution section of the incident record with the following
