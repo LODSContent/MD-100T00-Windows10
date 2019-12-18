@@ -58,10 +58,7 @@ LON-DC1 also needs to be configured to allow remote desktop connections, however
 
     @lab.CtrlAltDelete
 
-3.  Select **Start**, and type +++**Advanced System Settings**+++.
-3.  Select **View advanced system settings** to open the System Properties dialog box.
-
-    >[!TIP]The System Properties may be minimized on the taskbar.
+3.  In the Type here to search field, type +++sysdm.cpl+++ and then press **Enter**.
 4.  In the System Properties window select the **Remote** tab.
 5.  Select **Allow remote connections to this computer** and select **OK**. 
 6.  Close the **System** window.
