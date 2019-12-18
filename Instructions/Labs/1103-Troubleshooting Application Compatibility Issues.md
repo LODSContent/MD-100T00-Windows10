@@ -1,4 +1,4 @@
-# Practice Lab: 
+# Practice Lab: Troubleshooting Application Compatibility Issues
 
 ## Summary
 In this exercise, you will learn to use the Application Compatibility Toolkit to create a compatibility fix for an application that does not natively run on Windows 10. 
