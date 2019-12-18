@@ -19,6 +19,8 @@ newly created storage space.
 
 1.  Sign in to @lab.VirtualMachine(LON-CL3).SelectLink as +++**LON-CL3\\Admin**+++ with the password +++**Pa55w.rd**+++.
 
+    @lab.CtrlAltDelete
+
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 
 3.  At the PowerShell Window type the following command and confirm with "Yes":
