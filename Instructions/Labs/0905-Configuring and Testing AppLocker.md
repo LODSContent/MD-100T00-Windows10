@@ -10,14 +10,16 @@ A manager has requested that Windows Media Player cannot be launched by his team
 on LON-CL1, however members of the IT group still require the ability to do so.
 You decide to use AppLocker.
 
- 
+ 
 
 ### Task 1: Create a new executable rule
 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
 
-2.  In the **Type here to search** box on the taskbar, type **gpedit.msc**, and
+    @lab.CtrlAltDelete
+
+2.  In the **Type here to search** box on the taskbar, type +++**gpedit.msc**+++, and
     then press Enter.
 
 3.  In the Local Group Policy Editor, expand **Computer Configuration**, expand
@@ -33,13 +35,13 @@ You decide to use AppLocker.
 6.  On the **Permissions** page, select **Deny**, and then select **Select**.
 
 7.  In the **Select User or Group** dialog box, in the **Enter the object name
-    to select (examples)** box, type **IT**, select **OK**, and then select
+    to select (examples)** box, type +++**IT**+++, select **OK**, and then select
     **Next**.
 
 8.  On the **Conditions** page, select **Path**, and then select **Next**.
 
 9.  On the **Path** page, select **Browse Files**, in the **File name** box,
-    type **C:\\Program Files\\Windows Media Player\\wmplayer.exe**, and then
+    type +++**C:\\Program Files\\Windows Media Player\\wmplayer.exe**+++, and then
     select **Open**.
 
 10. Select **Next** twice, and then select **Create**.
@@ -51,7 +53,7 @@ You decide to use AppLocker.
 13. In the details pane, right-click the empty space and then select **Create
     Default Rules**.
 
->    
+>    
 
 ### Task 2: Enforce AppLocker rules
 
@@ -68,7 +70,9 @@ You decide to use AppLocker.
 5.  At the Windows PowerShell prompt, type the following command, and then press
     Enter:
 
->   gpupdate /force
+    ```
+    gpupdate /force
+    ```
 
 
 ### Task 3: Confirm executable rule enforcement
@@ -87,20 +91,23 @@ You decide to use AppLocker.
     **EXE and DLL**.
 
 6.  Review the entries in the results pane. Locate **Event ID 8001.**  
-    **Note**: This will show that the AppLocker Policy is active now.
+
+    >[!NOTE] **Note**: This will show that the AppLocker Policy is active now.
 
 7.  Sign out.
 
-   
+   
 
 ### Task 4: Test rule enforcement
 
-1.  Sign in to **LON-CL1** as **Adatum\\Beth** with the password **Pa55w.rd**.
+1.  Sign in to **LON-CL1** as +++**Adatum\\Beth**+++ with the password +++**Pa55w.rd**+++.
 
-2.  In the **Type here to search** box on the taskbar, type **Media Player**,
+    @lab.CtrlAltDelete
+
+2.  In the **Type here to search** box on the taskbar, type +++**Media Player**+++,
     and then select **Windows Media Player**.
 
->   **Note:** You will be unable to start Windows Media Player.
+    >[!NOTE] **Note:** You will be unable to start Windows Media Player.
 
 1.  In the **This app has been blocked by your system administrator** dialog
     box, select **Close**.
@@ -118,7 +125,7 @@ You decide to use AppLocker.
 
 6.  Sign out.
 
->    
+>    
 
 **Results**: After completing this exercise, you should have configured an
 AppLocker policy to prevent users from starting Windows Media Player.
