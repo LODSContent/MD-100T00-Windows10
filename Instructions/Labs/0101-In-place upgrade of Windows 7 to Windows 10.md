@@ -12,7 +12,7 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
 1.  Sign in to @lab.VirtualMachine(LON-CL6).SelectLink as +++**Adatum\\Administrator**+++ with the password +++**Pa55w.rd**+++
 
 
-    >[!TIP] To send Ctrl+Alt+Delete to the virtual machine, select  the lightning bolt icon in the upper left of the lab UI and select **Ctrl+Alt+Delete**. Alternatively, select the Resources tab, and select **Ctrl+Alt+Delete** under the virtual machine you want to sign in to.
+    >[!TIP] To send Ctrl+Alt+Delete to the virtual machine, select  the lightning bolt icon in the upper left of the lab UI and select **Ctrl+Alt+Delete**. Alternatively, select the Resources tab, and select **Ctrl+Alt+Delete** under the virtual machine you want to sign in to. Finally, if you see the @lab.CtrlAltDelete icon, you can select it to send the keyboard sequence to the virtual machine.
 
     >[!TIP] Whenever you see the +++Type text icon+++, you can select it to copy the text string to the virtual machine. 
 
@@ -50,6 +50,7 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
 
 1.  Sign in to LON-CL6 as +++**Adatum\\Administrator**+++ with the password +++**Pa55w.rd**+++
 
+    @lab.CtrlAltDelete
 2.  If a Microsoft Windows dialog box opens, select **Restart Later**.
 3.  If a Windows Activation dialog box opens, select **Ask me later**. Select
     **OK**.
@@ -72,6 +73,8 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
 4. On the Who’s going to use this PC page, provide the following information when prompted, and selecting **Next**
 -   Username: +++**LocalAdmin**+++
 -   Password: +++**Pa55w.rd**+++
+
+    @lab.CtrlAltDelete
 5. When prompted for security questions, select any three questions and enter any answer.
 6. On the Do more across devices with activity history, select **No**.
 7. On the Get help from your digital assistant, select **Decline**
