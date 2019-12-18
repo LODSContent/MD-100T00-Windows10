@@ -12,14 +12,16 @@ about the location's security and concerns with equipment theft. You have
 decided to implement BitLocker to protect the user’s data files that are stored
 on the local drive (E:).
 
- 
+ 
 
 ### Task 1: Configure GPO settings
 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-CL1).SelectLink as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
 
-2.  In the T**ype here to search box** on the taskbar, type **gpedit.msc**, and
+    @lab.CtrlAltDelete
+
+2.  In the **Type here to search box** on the taskbar, type +++**gpedit.msc**+++, and
     then press Enter.
 
 3.  In the Local Group Policy Editor, under **Computer Configuration** node,
@@ -34,7 +36,7 @@ on the local drive (E:).
 
 6.  Close all open windows.
 
->    
+>    
 
 ### Task 2: Enable BitLocker
 
@@ -49,7 +51,7 @@ on the local drive (E:).
     password to unlock the drive**.
 
 5.  In the **Enter your password** and **Reenter your password** boxes, type
-    **Pa55w.rd**, and then select **Next**.
+    +++**Pa55w.rd**+++, and then select **Next**.
 
 6.  On the **How do you want to back up your recovery key?** page, select **Save
     to a file**.
@@ -81,26 +83,28 @@ on the local drive (E:).
 
 15. Restart LON-CL1.
 
->    
+>    
 
 ### Task 3: Verify BitLocker
 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to **LON-CL1** as +++**Adatum\\Administrator**+++ with the password
+    +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
 
 2.  Select the **File Explorer** icon on the taskbar.
 
 3.  In File Explorer in the navigation pane expand **This PC**, and select
     **Local Disk (E:)**.
 
-4.  In the BitLocker (E:) window, enter the password **Pa55w.rd**, press Enter
+4.  In the BitLocker (E:) window, enter the password +++**Pa55w.rd**+++, press Enter
     to unlock the drive, and then verify access to the drive contents.  
     *Note: In the rest of this lab in this module, you must always enter the
     password to unlock the E: drive after a reboot.*
 
 5.  Close all open windows.
 
->    
+>    
 
 **Results**: After completing this exercise, you should have configured
 BitLocker to encrypt a local drive.
