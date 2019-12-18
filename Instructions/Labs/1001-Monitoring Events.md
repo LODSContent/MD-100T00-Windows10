@@ -9,11 +9,19 @@ You decide to collect event log entries from LON-DC1 on your client LON-CL1. Aft
 
 
 ### Task 1: Configure Event Viewer to collect data from multiple devices
-1.  Sign in to **LON-DC1** as **adatum\\Administrator** with the password: **Pa55w.rd**.
+1.  Sign in to @lab.VirtualMachine(LON-DC1).SelectLink as +++**adatum\\Administrator**+++ with the password: +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
+
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 3.  At the PowerShell command prompt, type the following command, and then press **Enter**:
-    `winrm quickconfig`
-    _**Note**: This is just a check, as the remote management feature is probably enabled._
+
+    ```
+    winrm quickconfig
+    ```
+
+    >[!NOTE] **Note**: This is just a check, as the remote management feature is probably enabled.
+
 4.  In **Server Manager**, select **Tools**, and then select **Active Directory
     Users and Computers**.
 5.  In **Active Directory Users and Computers**, in the navigation pane, expand
@@ -26,14 +34,21 @@ You decide to collect event log entries from LON-DC1 on your client LON-CL1. Aft
     then select **OK**.
 10. In the **Select Users, Contacts, Computers, Service Accounts, or Groups**
     dialog box, in the **Enter the object names to select (examples)** box, type
-    **LON-CL1**, and then select **OK**.
+    +++**LON-CL1**+++, and then select **OK**.
 11. In the **Event Log Readers Properties** dialog box, select **OK**.
 12. Close the **Active Directory users and computers** and Windows PowerShell window
-13. Switch to **LON-CL1**.
-14. Sign in to **LON-CL1** as **adatum\\Administrator** with the password: **Pa55w.rd**.
+13. Switch to @lab.VirtualMachine(LON-CL1).SelectLink.
+14. Sign in to **LON-CL1** as +++**adatum\\Administrator**+++ with the password: +++**Pa55w.rd**+++.
+
+    @lab.CtrlAltDelete
+
 15. Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 16. At the PowerShell command prompt, type the following command, and then press **Enter**:
-    `wecutil qc`
+
+    ```
+    wecutil qc
+    ```
+
 17. When prompted, type **Y**, and then press Enter.
 
 ### Task 2: View and filter events 
@@ -41,11 +56,11 @@ You decide to collect event log entries from LON-DC1 on your client LON-CL1. Aft
 2.  In **Event Viewer**, in the navigation pane, select **Subscriptions**.
 3.  Right-click **Subscriptions**, and then select **Create Subscription**.
 4.  In the **Subscription Properties** dialog box, in the **Subscription name**
-    box, type **LON-DC1 Events**.
+    box, type +++**LON-DC1 Events**+++.
 5.  Select **Collector Initiated**, and then select **Select Computers**.
 6.  In the **Computers** dialog box, select **Add Domain Computers**.
 7.  In the **Select Computer** dialog box, in the **Enter the object name to
-    select (examples)** box, type **LON-DC1**, and then select **OK**.
+    select (examples)** box, type +++**LON-DC1**+++, and then select **OK**.
 8.  In the **Computers** dialog box, select **OK**.
 9.  In the **Subscription Properties – LON-DC1 Events** dialog box, select
     **Select Events**.
