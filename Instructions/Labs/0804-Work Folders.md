@@ -198,7 +198,7 @@ configuration.
 
     @lab.CtrlAltDelete
 
-17. On **LON-CL3**, select **Start**, type **Control Panel**, and then press
+17. On **LON-CL3**, select **Start**, type +++**Control Panel**+++, and then press
     Enter.
 
 18. In Control Panel, select **System and Security,** and then select **Work
