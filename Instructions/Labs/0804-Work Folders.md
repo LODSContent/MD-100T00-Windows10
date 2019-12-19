@@ -156,11 +156,11 @@ configuration.
 
 2.  Switch to @lab.VirtualMachine(LON-CL3).SelectLink.
 
-3.  Sign in to **LON-CL3** as ++++**LON-CL3\\Admin**+++ with the password +++**Pa55w.rd**+++.
+3.  Sign in to **LON-CL3** as +++**LON-CL3\\Admin**+++ with the password +++**Pa55w.rd**+++.
 
     @lab.CtrlAltDelete
 
-4.  On **LON-CL3** select **Start**, type +++**\\lon-dc1\certenroll**+++, and then press
+4.  On **LON-CL3** select **Start**, type +++**\\\\lon-dc1\\certenroll**+++, and then press
     enter.
 
 5.  In the **Enter Network credentials** dialog box, enter the user name as
