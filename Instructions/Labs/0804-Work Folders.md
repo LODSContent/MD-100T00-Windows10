@@ -77,8 +77,10 @@ few minutes for LON-DC1 to show.
 7.  On the **View Results** page, select **Close**.
 
 8.  In Server Manager, in the **WORK FOLDERS** section, verify that
-    **syncshare1** is listed, and that in the **USERS** section, the user
+    **syncshare1** is listed, and that, in the **USERS** section, the user
     **Anthony Lynch** is listed.
+    
+    >[!TIP] You may have to scroll down to see the USERS section.
 
 9.  On **LON-DC1**, in Server Manager, select **Tools**, and then select
     **Internet Information Services (IIS) Manager**.
@@ -163,8 +165,8 @@ configuration.
 4.  On **LON-CL3** select **Start**, type +++**\\\\lon-dc1\\certenroll**+++, and then press
     enter.
 
-5.  In the **Enter Network credentials** dialog box, enter the user name as
-    +++**administrator\@adatum.com**+++ and the password as +++**Pa55w.rd**+++. Select
+5.  If prompted, in the **Enter Network credentials** dialog box, enter the user name as
+    +++**administrator@adatum.com**+++ and the password as +++**Pa55w.rd**+++. Select
     **OK**.
 
 6.  In the **certenroll** window, double-click
