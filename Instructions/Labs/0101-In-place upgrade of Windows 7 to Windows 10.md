@@ -54,15 +54,21 @@ As Windows 7 is reaching end of support in the near future your manager wants yo
 2.  If a Microsoft Windows dialog box opens, select **Restart Later**.
 3.  If a Windows Activation dialog box opens, select **Ask me later**. Select
     **OK**.
-4.  On the taskbar, select the **Windows Explorer** icon.
-5.  In Windows Explorer, select the **DVD drive**.
-6.  In the contents pane, double-click the **setup.exe** file, and select **Yes**.
-7.  On the Windows 10 Setup page, select **Next*.
-8.  On the Applicable notices and license terms page, select **Accept**.
-9. On the Ready to install page, select **Choose what to keep**.
-10. On the Select what to keep page, select **Nothing**. Select **Next**, and then
+4.  Click **Start**, and select **Control Panel**.
+5.  Select **System and Security**.
+6.  Select **System**.
+7.  Under Windows Activation, if the option is available, select **Activate Windows now**, and then select **Activate Windows online now**.
+8.  In the Windows Activation dialog box, select **Close**.
+9.  Close the System dialog box.
+10.  On the taskbar, select the **Windows Explorer** icon.
+11.  In Windows Explorer, select the **DVD drive**.
+12.  In the contents pane, double-click the **setup.exe** file, and select **Yes**.
+13.  On the Windows 10 Setup page, select **Next*.
+14.  On the Applicable notices and license terms page, select **Accept**.
+15. On the Ready to install page, select **Choose what to keep**.
+16. On the Select what to keep page, select **Nothing**. Select **Next**, and then
     select **Yes**.
-11. On the Ready to install page, select **Install**. The setup program will now upgrade your Windows 7 installation to Windows 10. 
+17. On the Ready to install page, select **Install**. The setup program will now upgrade your Windows 7 installation to Windows 10. 
 
     >[!NOTE] Note: This will take approximately 30 minutes.
 
